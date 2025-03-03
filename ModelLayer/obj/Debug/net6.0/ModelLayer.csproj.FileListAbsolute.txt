@@ -1,0 +1,11 @@
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.deps.json
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfoInputs.cache
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfo.cs
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.dll
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
+C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll
