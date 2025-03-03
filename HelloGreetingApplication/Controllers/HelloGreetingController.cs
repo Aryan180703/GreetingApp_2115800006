@@ -1,3 +1,4 @@
+using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ModelLayer.Model;
@@ -12,13 +13,15 @@ namespace HelloGreetingApplication.Controllers
     public class HelloGreetingController : ControllerBase
     {
         private readonly ILogger<HelloGreetingController> _logger;
+        private readonly IGreetingBL _greetingBL;
 
         /// <summary>
         /// Constructor to initialize the logger.
         /// </summary>
         /// <param name="logger">Logger instance</param>
-        public HelloGreetingController(ILogger<HelloGreetingController> logger)
+        public HelloGreetingController(IGreetingBL greetingBL, ILogger<HelloGreetingController> logger)
         {
+            _greetingBL = greetingBL;
             _logger = logger;
         }
 

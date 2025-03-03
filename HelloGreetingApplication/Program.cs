@@ -1,5 +1,7 @@
 using NLog;
 using NLog.Web;
+using BusinessLayer.Service;
+using BusinessLayer.Interface;
 
 var logger = LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
 logger.Info("Application is starting...");
@@ -11,6 +13,8 @@ builder.Logging.ClearProviders();
 builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
 builder.Host.UseNLog();
 
+//Register the GreetingService in dependency injection
+builder.Services.AddScoped<IGreetingBL, GreetingBL>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
