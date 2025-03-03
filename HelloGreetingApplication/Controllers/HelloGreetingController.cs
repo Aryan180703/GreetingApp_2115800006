@@ -42,21 +42,28 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// POST method to receive and return a greeting message.
+        /// POST method to generate a personalized greeting message.
         /// </summary>
-        /// <param name="requestModel">Request model containing a key-value pair.</param>
-        /// <returns>Response model with received data.</returns>
+        /// <param name="requestModel">Request model containing user attributes.</param>
+        /// <returns>Response model with personalized greeting.</returns>
         [HttpPost]
         public IActionResult Post([FromBody] RequestModel requestModel)
         {
-            _logger.LogInformation("POST request received with Key: {Key}, Value: {Value}", requestModel.Key, requestModel.Value);
+            _logger.LogInformation("POST request received with FirstName: {FirstName}, LastName: {LastName}",
+                requestModel.FirstName, requestModel.LastName);
+
+            // Call Business Layer to generate greeting
+            string greetingMessage = _greetingBL.GenerateGreetingMessage(requestModel.FirstName, requestModel.LastName);
+
+            _logger.LogInformation("Generated Greeting: {GreetingMessage}", greetingMessage);
 
             ResponseModel<string> responseModel = new ResponseModel<string>();
             responseModel.Success = true;
-            responseModel.Message = "Request received successfully";
-            responseModel.Data = $"Key: {requestModel.Key}, Value: {requestModel.Value}";
+            responseModel.Message = "Personalized Greeting Generated";
+            responseModel.Data = greetingMessage;
             return Ok(responseModel);
         }
+
 
         /// <summary>
         /// PUT method to update the greeting message.
@@ -66,7 +73,8 @@ namespace HelloGreetingApplication.Controllers
         [HttpPut]
         public IActionResult Put([FromBody] RequestModel requestModel)
         {
-            _logger.LogInformation("PUT request received with Key: {Key}, Updated Value: {Value}", requestModel.Key, requestModel.Value);
+            _logger.LogInformation("PUT request received with Key: {Key}, Updated Value: {Value}", 
+                requestModel.Key, requestModel.Value);
 
             ResponseModel<string> responseModel = new ResponseModel<string>();
             responseModel.Success = true;
@@ -83,7 +91,8 @@ namespace HelloGreetingApplication.Controllers
         [HttpPatch]
         public IActionResult Patch([FromBody] RequestModel requestModel)
         {
-            _logger.LogInformation("PATCH request received with Key: {Key}, Modified Value: {Value}", requestModel.Key, requestModel.Value);
+            _logger.LogInformation("PATCH request received with Key: {Key}, Modified Value: {Value}", 
+                requestModel.Key, requestModel.Value);
 
             ResponseModel<string> responseModel = new ResponseModel<string>();
             responseModel.Success = true;

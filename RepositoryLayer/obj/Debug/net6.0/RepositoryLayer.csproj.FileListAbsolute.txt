@@ -13,3 +13,18 @@ C:\Capgemini Project\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\R
 C:\Capgemini Project\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\refint\RepositoryLayer.dll
 C:\Capgemini Project\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.pdb
 C:\Capgemini Project\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.deps.json
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.dll
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfoInputs.cache
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfo.cs
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\Reposito.A0A61804.Up2Date
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.dll
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\refint\RepositoryLayer.dll
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.pdb
+C:\GreetingApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll

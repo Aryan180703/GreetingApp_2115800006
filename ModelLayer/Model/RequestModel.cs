@@ -8,7 +8,9 @@ namespace ModelLayer.Model
 {
     public class RequestModel
     {
-        public string Key { get; set; }
-        public string Value { get; set; }
+        public string Key { get; set; } = "";
+        public string Value { get; set; } = "";
+        public string FirstName { get; set; } = "";
+        public string LastName { get; set; } = "";
     }
 }

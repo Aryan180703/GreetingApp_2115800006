@@ -9,3 +9,14 @@ C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelL
 C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
 C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
 C:\Capgemini Project\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.deps.json
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfoInputs.cache
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfo.cs
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.csproj.CoreCompileInputs.cache
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.dll
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
+C:\GreetingApp\HelloGreetingApplication\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll
