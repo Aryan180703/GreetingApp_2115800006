@@ -1,0 +1,11 @@
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\bin\Debug\net6.0\ModelLayer.deps.json
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfoInputs.cache
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfo.cs
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.dll
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
+C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll

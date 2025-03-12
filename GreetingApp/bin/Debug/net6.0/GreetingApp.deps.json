@@ -1,0 +1,71 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GreetingApp/1.0.0": {
+        "dependencies": {
+          "BusinessLayer": "1.0.0"
+        },
+        "runtime": {
+          "GreetingApp.dll": {}
+        }
+      },
+      "BusinessLayer/1.0.0": {
+        "dependencies": {
+          "RepositoryLayer": "1.0.0"
+        },
+        "runtime": {
+          "BusinessLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ModelLayer/1.0.0": {
+        "runtime": {
+          "ModelLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "RepositoryLayer/1.0.0": {
+        "dependencies": {
+          "ModelLayer": "1.0.0"
+        },
+        "runtime": {
+          "RepositoryLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GreetingApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BusinessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ModelLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RepositoryLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
