@@ -1,0 +1,15 @@
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.deps.json
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.dll
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfoInputs.cache
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfo.cs
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\Reposito.A0A61804.Up2Date
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.dll
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\refint\RepositoryLayer.dll
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.pdb
+C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll
