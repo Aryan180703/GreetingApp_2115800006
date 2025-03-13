@@ -92,5 +92,31 @@ namespace RepositoryLayer.Service
 
             }).ToList();
         }
+
+        /// <summary>
+        /// Updates an existing greeting message in the database if it exists.
+        /// </summary>
+        /// <param name="requestUpdateModel">An object containing the ID of the greeting message to update and the new greeting message content.</param>
+        /// <returns>
+        /// - Returns an updated <see cref="ResponseAllMessage"/> object if the update is successful.
+        /// - Returns **null** if no greeting message is found with the given ID.
+        /// </returns>
+        public ResponseAllMessage UpdateGreetingMessageRL(RequestUpdateModel requestUpdateModel)
+        {
+            var GreetingEntity = _Context.Greetings.FirstOrDefault(g => g.Id == requestUpdateModel.Id);
+            if (GreetingEntity != null)
+            {
+                GreetingEntity.GreetingMessage = requestUpdateModel.Message;
+                _Context.SaveChanges();
+                return new ResponseAllMessage
+                {
+                    Email = GreetingEntity.Email,
+                    FirstName = GreetingEntity.FirstName,
+                    LastName = GreetingEntity.LastName,
+                    Message = GreetingEntity.GreetingMessage,
+                };
+            }
+            return null;
+        }
     }
 }
