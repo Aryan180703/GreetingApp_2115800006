@@ -34,8 +34,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "requestModel",
-        "Type": "ModelLayer.Model.RequestModel",
+        "Name": "requestUpdateModel",
+        "Type": "ModelLayer.Model.RequestUpdateModel",
         "IsRequired": true
       }
     ],
@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "requestModel",
-        "Type": "ModelLayer.Model.RequestModel",
+        "Type": "ModelLayer.Model.RequestUpdateModel",
         "IsRequired": true
       }
     ],

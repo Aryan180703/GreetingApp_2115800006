@@ -170,5 +170,40 @@ namespace BusinessLayer.Service
                 Data = listOfGreetings
             };
         }
+
+
+        /// <summary>
+        /// Updates an existing greeting message in the database if it exists.
+        /// </summary>
+        /// <param name="requestUpdateModel">
+        /// An object containing:
+        /// - <see cref="RequestUpdateModel.Id"/>: The unique identifier of the greeting message to update.
+        /// - <see cref="RequestUpdateModel.Message"/>: The new greeting message text.
+        /// </param>
+        /// <returns>
+        /// A <see cref="ResponseModel{ResponseAllMessage}"/> object containing:
+        /// - **Success = true** and the updated greeting message if the update is successful.
+        /// - **Success = false** if no greeting message exists for the provided ID.
+        /// </returns>
+
+        public ResponseModel<ResponseAllMessage> UpdateGreetingMessage(RequestUpdateModel requestUpdateModel)
+        {
+            ResponseAllMessage requestModel = _greetingRL.UpdateGreetingMessageRL(requestUpdateModel);
+            if(requestModel == null)
+            {
+                return new ResponseModel<ResponseAllMessage>
+                {
+                    Success = false,
+                    Message = "No greeting message exist with the given ID",
+                    Data = null
+                };
+            }
+            return new ResponseModel<ResponseAllMessage>
+            {
+                Success = true,
+                Message = "Greeting Message Updated",
+                Data = requestModel
+            };
+        }
     }
 }

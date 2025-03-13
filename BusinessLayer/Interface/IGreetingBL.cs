@@ -15,5 +15,6 @@ namespace BusinessLayer.Interface
         public ResponseModel<string> GenerateGreeting(string firstName, string lastName);
         public ResponseModel<string> GetGreetingById(int id);
         public ResponseModel<List<ResponseAllMessage>> GetAllGreetingMessage();
+        public ResponseModel<ResponseAllMessage> UpdateGreetingMessage(RequestUpdateModel requestUpdateModel);
     }
 }

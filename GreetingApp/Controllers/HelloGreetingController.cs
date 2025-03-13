@@ -97,20 +97,26 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Updates an existing greeting message.
+        /// Updates an existing greeting message and returns the updated response.
         /// </summary>
-        /// <param name="requestModel">The request model containing the updated greeting message.</param>
-        /// <returns>Returns a response confirming the update.</returns>
-        [HttpPut]
-        public IActionResult Put([FromBody] RequestModel requestModel)
+        /// <param name="requestUpdateModel">
+        /// An object containing the unique identifier of the greeting message and the new message content.
+        /// </param>
+        /// <returns>
+        /// A <see cref="ResponseModel{ResponseAllMessage}"/>:
+        /// - If successful, returns a response with <c>Success = true</c> and the updated message.
+        /// - If no greeting message exists for the given ID, returns <c>Success = false</c> with an appropriate message.
+        /// </returns>
+
+        [HttpPut()]
+        public IActionResult Put([FromBody] RequestUpdateModel requestUpdateModel)
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>
+            ResponseModel<ResponseAllMessage> response = _greetingBL.UpdateGreetingMessage(requestUpdateModel);
+            if (response.Success == true)
             {
-                Success = true,
-                Message = "Greeting updated successfully",
-                Data = $"Updated Value: {requestModel.Value}"
-            };
-            return Ok(responseModel);
+                return Ok(response);
+            }
+            return NotFound(response);
         }
 
         /// <summary>
@@ -119,13 +125,13 @@ namespace HelloGreetingApplication.Controllers
         /// <param name="requestModel">The request model containing the partial update.</param>
         /// <returns>Returns a response confirming the modification.</returns>
         [HttpPatch]
-        public IActionResult Patch([FromBody] RequestModel requestModel)
+        public IActionResult Patch([FromBody] RequestUpdateModel requestModel)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
                 Success = true,
                 Message = "Greeting partially updated",
-                Data = $"Modified Value: {requestModel.Value}"
+                Data = $"Modified Value: {requestModel.Message}"
             };
             return Ok(responseModel);
         }
