@@ -1,3 +1,5 @@
+using BusinessLayer.Service;
+using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 
@@ -10,6 +12,11 @@ namespace HelloGreetingApplication.Controllers
     [Route("[controller]")]
     public class HelloGreetingController : ControllerBase
     {
+        private readonly IGreetingBL _greetingBL;
+        public HelloGreetingController(IGreetingBL greetingBL)
+        {
+            _greetingBL = greetingBL;
+        }
         /// <summary>
         /// GET method to retrieve the greeting message.
         /// </summary>
@@ -32,11 +39,7 @@ namespace HelloGreetingApplication.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] RequestModel requestModel)
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-            responseModel.Success = true;
-            responseModel.Message = "Request received successfully";
-            responseModel.Data = $"Key: {requestModel.Key}, Value: {requestModel.Value}";
-            return Ok(responseModel);
+            return Ok(_greetingBL.GenerateGreetingMessage(requestModel));
         }
 
         /// <summary>
