@@ -2,6 +2,7 @@ using BusinessLayer.Service;
 using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -18,28 +19,38 @@ namespace HelloGreetingApplication.Controllers
             _greetingBL = greetingBL;
         }
         /// <summary>
-        /// GET method to retrieve the greeting message.
+        /// Generates a greeting message without storing it.
         /// </summary>
-        /// <returns>Response model with "Hello, World!"</returns>
+        /// <param name="FirstName">Optional first name of the user.</param>
+        /// <param name="LastName">Optional last name of the user.</param>
+        /// <returns>Returns a personalized greeting message.</returns>
         [HttpGet]
         public IActionResult Get()
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-            responseModel.Success = true;
-            responseModel.Message = "Hello to Greeting App API Endpoint";
-            responseModel.Data = "Hello, World!";
-            return Ok(responseModel);
+
+            return Ok(_greetingBL.GetGreetingMessage());
+        }
+
+        [HttpGet("GenerateGreeting/{FirstName?}/{LastName?}")]
+        public IActionResult Get(string? FirstName = "", string? LastName = "")
+        {
+            return Ok(_greetingBL.GenerateGreeting(FirstName, LastName));
         }
 
         /// <summary>
-        /// POST method to receive and return a greeting message.
+        /// Generates and stores a personalized greeting message.
         /// </summary>
-        /// <param name="requestModel">Request model containing a key-value pair.</param>
-        /// <returns>Response model with received data.</returns>
+        /// <param name="requestGreetingModel">Request model containing user details.</param>
+        /// <returns>Returns success or failure response with stored greeting data.</returns>
         [HttpPost]
-        public IActionResult Post([FromBody] RequestModel requestModel)
+        public IActionResult Post([FromBody] RequestGreetingModel requestGreetingModel)
         {
-            return Ok(_greetingBL.GenerateGreetingMessage(requestModel));
+            ResponseModel<GreetingEntity> response = _greetingBL.GenerateGreetingMessage(requestGreetingModel);
+            if (response.Success == true)
+            {
+                return Ok(response);
+            }
+            return BadRequest(response);
         }
 
         /// <summary>
