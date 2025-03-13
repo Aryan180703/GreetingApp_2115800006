@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "requestModel",
-        "Type": "ModelLayer.Model.RequestModel",
+        "Name": "requestGreetingModel",
+        "Type": "ModelLayer.Model.RequestGreetingModel",
         "IsRequired": true
       }
     ],
@@ -65,6 +65,27 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "Get",
+    "RelativePath": "HelloGreeting/GenerateGreeting/{FirstName}/{LastName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]
