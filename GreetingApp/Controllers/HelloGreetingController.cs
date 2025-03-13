@@ -62,6 +62,23 @@ namespace HelloGreetingApplication.Controllers
             }
             return NotFound(response);
         }
+        /// <summary>
+        /// Retrieves all greeting messages from the database and returns an HTTP response.
+        /// </summary>
+        /// <returns>
+        /// - **200 OK** with a response model containing greeting messages if found.
+        /// - **404 Not Found** if no greetings are available.
+        /// </returns>
+        [HttpGet("GetAllGreetingMessage")]
+        public IActionResult GetAll()
+        {
+            ResponseModel<List<ResponseAllMessage>> response = _greetingBL.GetAllGreetingMessage();
+            if (response.Success)
+            {
+                return Ok(response);
+            }
+            return NotFound(response);
+        }
 
         /// <summary>
         /// Generates and stores a personalized greeting message.

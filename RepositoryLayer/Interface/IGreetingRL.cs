@@ -12,5 +12,6 @@ namespace RepositoryLayer.Interface
     {
         public GreetingEntity AddGreeting(RequestGreetingModel requestGreetingModel, string Message);
         public string GetGreetingByIdRL(int id);
+        public List<ResponseAllMessage> GetAllGreetingMessageRL();
     }
 }

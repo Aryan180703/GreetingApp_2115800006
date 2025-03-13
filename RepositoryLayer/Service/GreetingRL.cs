@@ -73,5 +73,24 @@ namespace RepositoryLayer.Service
             }
             return GreetingIDExist.GreetingMessage;
         }
+
+        /// <summary>
+        /// Retrieves all greeting messages from the database and maps them to the ResponseAllMessage model.
+        /// </summary>
+        /// <returns>
+        /// A list of <see cref="ResponseAllMessage"/> objects containing email, first name, last name, and the greeting message.
+        /// If no greetings are found, an empty list is returned.
+        /// </returns>
+        public List<ResponseAllMessage> GetAllGreetingMessageRL()
+        {
+            return _Context.Greetings.Select(g => new ResponseAllMessage
+            {
+                Email = g.Email,
+                FirstName = g.FirstName,
+                LastName = g.LastName,
+                Message = g.GreetingMessage,
+
+            }).ToList();
+        }
     }
 }

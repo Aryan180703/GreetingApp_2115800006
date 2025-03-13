@@ -142,5 +142,33 @@ namespace BusinessLayer.Service
                 Data = null
             };
         }
+
+        /// <summary>
+        /// Retrieves all greeting messages from the database and returns them wrapped in a ResponseModel.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="ResponseModel{List{ResponseAllMessage}}"/> object containing:
+        /// - Success = true, Message = "All Greeting Messages retrieved", Data = List of greetings (if found).
+        /// - Success = false, Message = "No Greeting Message Found", Data = null (if no greetings exist).
+        /// </returns>
+        public ResponseModel<List<ResponseAllMessage>> GetAllGreetingMessage()
+        {
+            List<ResponseAllMessage > listOfGreetings = _greetingRL.GetAllGreetingMessageRL();
+            if(listOfGreetings.Count ==  0)
+            {
+                return new ResponseModel<List<ResponseAllMessage>>
+                {
+                    Success = false,
+                    Message = "No Greeting Message Found",
+                    Data = listOfGreetings
+                };
+            }
+            return new ResponseModel<List<ResponseAllMessage>>
+            {
+                Success = true,
+                Message = "All Greeting Messages retrieved",
+                Data = listOfGreetings
+            };
+        }
     }
 }
