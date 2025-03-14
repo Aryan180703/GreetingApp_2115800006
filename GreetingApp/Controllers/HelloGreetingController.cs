@@ -3,6 +3,7 @@ using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using RepositoryLayer.Entity;
+using Microsoft.Extensions.Logging;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -15,14 +16,17 @@ namespace HelloGreetingApplication.Controllers
     public class HelloGreetingController : ControllerBase
     {
         private readonly IGreetingBL _greetingBL;
+        private readonly ILogger<HelloGreetingController> _logger;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HelloGreetingController"/> class.
         /// </summary>
         /// <param name="greetingBL">Business logic layer interface for greeting operations.</param>
-        public HelloGreetingController(IGreetingBL greetingBL)
+        /// <param name="logger">Logger instance for logging operations.</param>
+        public HelloGreetingController(IGreetingBL greetingBL, ILogger<HelloGreetingController> logger)
         {
             _greetingBL = greetingBL;
+            _logger = logger;
         }
 
         /// <summary>
@@ -32,6 +36,7 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            _logger.LogInformation("Get method called to retrieve default greeting message.");
             return Ok(_greetingBL.GetGreetingMessage());
         }
 
@@ -44,6 +49,7 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet("GenerateGreeting/{FirstName?}/{LastName?}")]
         public IActionResult Get(string? FirstName = "", string? LastName = "")
         {
+            _logger.LogInformation("GenerateGreeting method called with FirstName: {FirstName}, LastName: {LastName}", FirstName, LastName);
             return Ok(_greetingBL.GenerateGreeting(FirstName, LastName));
         }
 
@@ -55,13 +61,18 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet("GetGreetingByID/{Id}")]
         public IActionResult Get(int id)
         {
+            _logger.LogInformation("GetGreetingByID method called with ID: {Id}", id);
             ResponseModel<string> response = _greetingBL.GetGreetingById(id);
             if (response.Success)
             {
+                _logger.LogInformation("Greeting message found for ID: {Id}", id);
                 return Ok(response);
             }
+
+            _logger.LogWarning("No greeting message found for ID: {Id}", id);
             return NotFound(response);
         }
+
         /// <summary>
         /// Retrieves all greeting messages from the database and returns an HTTP response.
         /// </summary>
@@ -72,11 +83,15 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet("GetAllGreetingMessage")]
         public IActionResult GetAll()
         {
+            _logger.LogInformation("GetAllGreetingMessage method called to retrieve all greetings.");
             ResponseModel<List<ResponseAllMessage>> response = _greetingBL.GetAllGreetingMessage();
             if (response.Success)
             {
+                _logger.LogInformation("Retrieved {Count} greeting messages.", response.Data.Count);
                 return Ok(response);
             }
+
+            _logger.LogWarning("No greeting messages found in the database.");
             return NotFound(response);
         }
 
@@ -88,11 +103,15 @@ namespace HelloGreetingApplication.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] RequestGreetingModel requestGreetingModel)
         {
+            _logger.LogInformation("Post method called with RequestGreetingModel: {@RequestGreetingModel}", requestGreetingModel);
             ResponseModel<GreetingEntity> response = _greetingBL.GenerateGreetingMessage(requestGreetingModel);
             if (response.Success == true)
             {
+                _logger.LogInformation("Greeting message added successfully for user: {FirstName} {LastName}", requestGreetingModel.FirstName, requestGreetingModel.LastName);
                 return Ok(response);
             }
+
+            _logger.LogWarning("Failed to add greeting message. User already exists: {Email}", requestGreetingModel.Email);
             return Conflict(response);
         }
 
@@ -107,49 +126,43 @@ namespace HelloGreetingApplication.Controllers
         /// - If successful, returns a response with <c>Success = true</c> and the updated message.
         /// - If no greeting message exists for the given ID, returns <c>Success = false</c> with an appropriate message.
         /// </returns>
-
         [HttpPut()]
         public IActionResult Put([FromBody] RequestUpdateModel requestUpdateModel)
         {
+            _logger.LogInformation("Put method called with RequestUpdateModel: {@RequestUpdateModel}", requestUpdateModel);
             ResponseModel<ResponseAllMessage> response = _greetingBL.UpdateGreetingMessage(requestUpdateModel);
             if (response.Success == true)
             {
+                _logger.LogInformation("Greeting message updated successfully for ID: {Id}", requestUpdateModel.Id);
                 return Ok(response);
             }
+
+            _logger.LogWarning("No greeting message found for ID: {Id}", requestUpdateModel.Id);
             return NotFound(response);
         }
 
         /// <summary>
-        /// Partially updates a greeting message.
+        /// Deletes an existing greeting message by its unique identifier and resets it to a default message.
         /// </summary>
-        /// <param name="requestModel">The request model containing the partial update.</param>
-        /// <returns>Returns a response confirming the modification.</returns>
-        [HttpPatch]
-        public IActionResult Patch([FromBody] RequestUpdateModel requestModel)
+        /// <param name="Id">The unique identifier of the greeting message to be deleted.</param>
+        /// <returns>
+        /// Returns a <see cref="IActionResult"/> containing a <see cref="ResponseModel{T}"/> with the following outcomes:
+        /// - **200 OK**: If the greeting message is successfully deleted and updated.
+        /// - **404 Not Found**: If no greeting message exists with the given ID.
+        /// </returns>
+        [HttpDelete("DeleteGreetingMessage/{Id}")]
+        public IActionResult Delete(int Id)
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>
+            _logger.LogInformation("Delete method called with ID: {Id}", Id);
+            ResponseModel<ResponseAllMessage> response = _greetingBL.DeleteGreeting(Id);
+            if (response.Success == true)
             {
-                Success = true,
-                Message = "Greeting partially updated",
-                Data = $"Modified Value: {requestModel.Message}"
-            };
-            return Ok(responseModel);
-        }
+                _logger.LogInformation("Greeting message deleted successfully for ID: {Id}", Id);
+                return Ok(response);
+            }
 
-        /// <summary>
-        /// Deletes or resets the greeting message to default.
-        /// </summary>
-        /// <returns>Returns a response confirming the reset action.</returns>
-        [HttpDelete]
-        public IActionResult Delete()
-        {
-            ResponseModel<string> responseModel = new ResponseModel<string>
-            {
-                Success = true,
-                Message = "Greeting reset to default",
-                Data = "Hello, World!"
-            };
-            return Ok(responseModel);
+            _logger.LogWarning("No greeting message found for ID: {Id}", Id);
+            return NotFound(response);
         }
     }
 }

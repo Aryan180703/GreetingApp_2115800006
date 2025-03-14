@@ -1,0 +1,1084 @@
+2025-03-14 10:26:46.6659|INFO|GreetingApp.Program|Application is starting... 
+2025-03-14 10:26:47.8256|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-14 10:26:47.9138|INFO|GreetingApp.Program|Application has started successfully. 
+2025-03-14 10:26:47.9217|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-03-14 10:26:48.2415|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 039D5383BD8FB363D3CEC0BD6FC84A3A81D730B8) 
+2025-03-14 10:26:48.3166|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7059 
+2025-03-14 10:26:48.3166|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5063 
+2025-03-14 10:26:48.3166|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GreetingApp 
+2025-03-14 10:26:48.3166|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-14 10:26:48.3166|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-14 10:26:48.3166|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-14 10:26:48.4020|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-14 10:26:48.4020|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-14 10:26:48.4020|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\ 
+2025-03-14 10:26:48.4020|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-03-14 10:26:48.4506|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDA8" received FIN. 
+2025-03-14 10:26:48.4506|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDA9" received FIN. 
+2025-03-14 10:26:48.4506|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDA9" accepted. 
+2025-03-14 10:26:48.4506|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDA8" accepted. 
+2025-03-14 10:26:48.4665|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDA9" started. 
+2025-03-14 10:26:48.4665|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDA8" started. 
+2025-03-14 10:26:48.5362|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-14 10:26:48.5362|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-14 10:26:48.6043|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDA9" stopped. 
+2025-03-14 10:26:48.6043|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDA8" stopped. 
+2025-03-14 10:26:48.6043|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDA9" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-14 10:26:48.6043|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDA8" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-14 10:26:48.7332|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAA" accepted. 
+2025-03-14 10:26:48.7332|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAA" started. 
+2025-03-14 10:26:48.8652|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB2MIG9HDAA established using the following protocol: Tls13 
+2025-03-14 10:26:48.9407|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/HelloGreeting - - 
+2025-03-14 10:26:49.2802|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-03-14 10:26:49.3291|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:26:49.3291|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:26:49.3291|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:26:49.3402|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:26:49.4511|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:26:49.4511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:26:49.4511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:26:49.4511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:26:49.4511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:26:49.4511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:26:49.4511|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:26:49.8741|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2025-03-14 10:26:49.9253|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:26:49.9253|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Get method called to retrieve default greeting message. 
+2025-03-14 10:26:49.9253|INFO|BusinessLayer.Service.GreetingBL|GetGreetingMessage method called. Returning default greeting. 
+2025-03-14 10:26:49.9321|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:26:49.9321|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:26:49.9321|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:26:49.9321|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:26:49.9321|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-03-14 10:26:49.9321|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'. 
+2025-03-14 10:26:49.9777|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 513.346ms 
+2025-03-14 10:26:49.9777|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:26:50.0003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/HelloGreeting - - - 200 - text/plain;+charset=utf-8 1062.6752ms 
+2025-03-14 10:26:50.0542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/favicon.ico - - 
+2025-03-14 10:26:50.0542|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/favicon.ico' 
+2025-03-14 10:26:50.0542|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-14 10:26:50.0560|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/favicon.ico - - - 404 0 - 1.7228ms 
+2025-03-14 10:30:35.4076|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAB" accepted. 
+2025-03-14 10:30:35.4076|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAB" started. 
+2025-03-14 10:30:35.4227|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDAB" received FIN. 
+2025-03-14 10:30:35.4355|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAC" accepted. 
+2025-03-14 10:30:35.4355|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAC" started. 
+2025-03-14 10:30:35.5195|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-14 10:30:35.5195|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB2MIG9HDAC established using the following protocol: Tls13 
+2025-03-14 10:30:35.5195|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAB" stopped. 
+2025-03-14 10:30:35.5195|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDAB" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-14 10:30:35.5408|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 94 
+2025-03-14 10:30:35.5408|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:30:35.5408|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:30:35.5408|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:35.5408|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:35.5708|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ModelLayer.Model.RequestGreetingModel) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:30:35.5708|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:30:35.5708|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:30:35.5708|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:30:35.5708|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:30:35.5708|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:30:35.5708|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:35.5804|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:35.5977|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:35.5977|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' using the name '' in request data ... 
+2025-03-14 10:30:35.5977|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-14 10:30:35.6084|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000002": started reading request body. 
+2025-03-14 10:30:35.6084|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000002": done reading request body. 
+2025-03-14 10:30:35.6084|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestGreetingModel' 
+2025-03-14 10:30:35.6084|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:35.6084|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:35.6084|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:35.6264|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:35.6264|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Post method called with RequestGreetingModel: {"Email":"aryan123@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:35.6580|INFO|BusinessLayer.Service.GreetingBL|GenerateGreetingMessage method called with RequestGreetingModel: {"Email":"aryan123@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:35.6802|INFO|RepositoryLayer.Service.GreetingRL|AddGreeting method called with Email: aryan123@gmail.com 
+2025-03-14 10:30:36.6031|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:30:36.7657|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<GreetingEntity>()
+    .FirstOrDefault(e => e.Email == __requestGreetingModel_Email_0)' 
+2025-03-14 10:30:37.2410|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GreetingEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: GreetingEntity.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: GreetingEntity.Email (string) Required, 1], [Property: GreetingEntity.FirstName (string), 2], [Property: GreetingEntity.GreetingMessage (string) Required, 3], [Property: GreetingEntity.LastName (string), 4] }
+        SELECT TOP(1) g.Id, g.Email, g.FirstName, g.GreetingMessage, g.LastName
+        FROM Greetings AS g
+        WHERE g.Email == @__requestGreetingModel_Email_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GreetingEntity>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-14 10:30:37.3039|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:30:37.4061|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (97ms). 
+2025-03-14 10:30:37.4294|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:37.9540|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:37.9830|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:38.0862|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (115ms) [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:38.1477|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:30:38.2004|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:30:38.2004|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:38.2310|WARN|RepositoryLayer.Service.GreetingRL|Greeting already exists for Email: aryan123@gmail.com 
+2025-03-14 10:30:38.2310|WARN|BusinessLayer.Service.GreetingBL|Failed to add greeting message. User already exists: Arya UPadh 
+2025-03-14 10:30:38.2310|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|Failed to add greeting message. User already exists: aryan123@gmail.com 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:30:38.2310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ConflictObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[RepositoryLayer.Entity.GreetingEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:30:38.2310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp) in 2669.2989ms 
+2025-03-14 10:30:38.2310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAC" completed keep alive response. 
+2025-03-14 10:30:38.2310|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:30:38.2468|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 94 - 409 - application/json;+charset=utf-8 2706.0556ms 
+2025-03-14 10:30:51.7343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 93 
+2025-03-14 10:30:51.7343|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:30:51.7343|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:30:51.7343|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:51.7343|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:51.7442|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ModelLayer.Model.RequestGreetingModel) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' using the name '' in request data ... 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000003": started reading request body. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000003": done reading request body. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestGreetingModel' 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:51.7442|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Post method called with RequestGreetingModel: {"Email":"aryan13@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:51.7442|INFO|BusinessLayer.Service.GreetingBL|GenerateGreetingMessage method called with RequestGreetingModel: {"Email":"aryan13@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:51.7442|INFO|RepositoryLayer.Service.GreetingRL|AddGreeting method called with Email: aryan13@gmail.com 
+2025-03-14 10:30:51.7442|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.7442|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:51.7593|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:51.7593|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:30:51.7593|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.7593|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.7870|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'"UserContext"' generated a temporary value for the property '"Id"."GreetingEntity"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:30:51.7996|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:30:51.7996|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'UserContext'. 
+2025-03-14 10:30:51.7996|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'UserContext'. 
+2025-03-14 10:30:51.8156|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'UserContext'. 
+2025-03-14 10:30:51.8244|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.8244|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.8244|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2025-03-14 10:30:51.8400|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2025-03-14 10:30:51.9042|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:30:51.9042|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:30:51.9042|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Email], [FirstName], [GreetingMessage], [LastName])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Greetings]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2025-03-14 10:30:51.9042|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Greetings] ([Email], [FirstName], [GreetingMessage], [LastName])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Greetings]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2025-03-14 10:30:51.9381|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The foreign key property 'GreetingEntity.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2025-03-14 10:30:51.9381|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:30:51.9538|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2025-03-14 10:30:51.9632|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2025-03-14 10:30:51.9632|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.9632|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:51.9632|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2025-03-14 10:30:51.9911|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'GreetingEntity' tracked by 'UserContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'UserContext' with 1 entities written to the database. 
+2025-03-14 10:30:51.9958|INFO|RepositoryLayer.Service.GreetingRL|Greeting added successfully for Email: aryan13@gmail.com 
+2025-03-14 10:30:51.9958|INFO|BusinessLayer.Service.GreetingBL|Greeting message added successfully for user: Arya UPadh 
+2025-03-14 10:30:51.9958|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Greeting message added successfully for user: Arya UPadh 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:30:51.9958|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[RepositoryLayer.Entity.GreetingEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:30:51.9958|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp) in 256.2709ms 
+2025-03-14 10:30:51.9958|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAC" completed keep alive response. 
+2025-03-14 10:30:51.9958|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:30:51.9958|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 93 - 200 - application/json;+charset=utf-8 266.8936ms 
+2025-03-14 10:30:56.0843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 93 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:56.0843|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:56.0843|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ModelLayer.Model.RequestGreetingModel) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' using the name '' in request data ... 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000004": started reading request body. 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000004": done reading request body. 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestGreetingModel' 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:56.0843|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:56.0843|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Post method called with RequestGreetingModel: {"Email":"aryan13@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:56.0843|INFO|BusinessLayer.Service.GreetingBL|GenerateGreetingMessage method called with RequestGreetingModel: {"Email":"aryan13@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:56.0843|INFO|RepositoryLayer.Service.GreetingRL|AddGreeting method called with Email: aryan13@gmail.com 
+2025-03-14 10:30:56.1475|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:30:56.1475|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:30:56.1475|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:30:56.1475|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:56.1475|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:56.1475|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:56.1509|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:56.1509|WARN|RepositoryLayer.Service.GreetingRL|Greeting already exists for Email: aryan13@gmail.com 
+2025-03-14 10:30:56.1509|WARN|BusinessLayer.Service.GreetingBL|Failed to add greeting message. User already exists: Arya UPadh 
+2025-03-14 10:30:56.1509|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|Failed to add greeting message. User already exists: aryan13@gmail.com 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:30:56.1509|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ConflictObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[RepositoryLayer.Entity.GreetingEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:30:56.1509|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp) in 66.0096ms 
+2025-03-14 10:30:56.1509|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAC" completed keep alive response. 
+2025-03-14 10:30:56.1509|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:30:56.1509|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 93 - 409 - application/json;+charset=utf-8 67.4031ms 
+2025-03-14 10:30:57.3626|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 93 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:57.3626|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:57.3626|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ModelLayer.Model.RequestGreetingModel) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' using the name '' in request data ... 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000005": started reading request body. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAC", Request id "0HNB2MIG9HDAC:00000005": done reading request body. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestGreetingModel' 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel' ... 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'requestGreetingModel' of type 'ModelLayer.Model.RequestGreetingModel'. 
+2025-03-14 10:30:57.3626|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Post method called with RequestGreetingModel: {"Email":"aryan13@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:57.3626|INFO|BusinessLayer.Service.GreetingBL|GenerateGreetingMessage method called with RequestGreetingModel: {"Email":"aryan13@gmail.com", "FirstName":"Arya", "LastName":"UPadh"} 
+2025-03-14 10:30:57.3626|INFO|RepositoryLayer.Service.GreetingRL|AddGreeting method called with Email: aryan13@gmail.com 
+2025-03-14 10:30:57.3626|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:57.3626|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__requestGreetingModel_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Email] = @__requestGreetingModel_Email_0 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:30:57.3626|WARN|RepositoryLayer.Service.GreetingRL|Greeting already exists for Email: aryan13@gmail.com 
+2025-03-14 10:30:57.3626|WARN|BusinessLayer.Service.GreetingBL|Failed to add greeting message. User already exists: Arya UPadh 
+2025-03-14 10:30:57.3626|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|Failed to add greeting message. User already exists: aryan13@gmail.com 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:30:57.3626|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ConflictObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[RepositoryLayer.Entity.GreetingEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:30:57.3626|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp) in 2.9568ms 
+2025-03-14 10:30:57.3626|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (GreetingApp)' 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAC" completed keep alive response. 
+2025-03-14 10:30:57.3626|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:30:57.3626|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/HelloGreeting application/json 93 - 409 - application/json;+charset=utf-8 5.1094ms 
+2025-03-14 10:32:33.0380|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDAD" received FIN. 
+2025-03-14 10:32:33.0501|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAD" accepted. 
+2025-03-14 10:32:33.0501|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAD" started. 
+2025-03-14 10:32:33.0949|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" accepted. 
+2025-03-14 10:32:33.0949|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" started. 
+2025-03-14 10:32:33.0949|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-14 10:32:33.1160|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAD" stopped. 
+2025-03-14 10:32:33.1992|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDAD" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-14 10:32:33.1992|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB2MIG9HDAE established using the following protocol: Tls13 
+2025-03-14 10:32:33.1992|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting/GenerateGreeting/Aryan/Tanisha application/json 93 
+2025-03-14 10:32:33.2261|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/GenerateGreeting/Aryan/Tanisha' 
+2025-03-14 10:32:33.2261|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting/GenerateGreeting/{FirstName?}/{LastName?}' is valid for the request path '/HelloGreeting/GenerateGreeting/Aryan/Tanisha' 
+2025-03-14 10:32:33.2261|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:33.2261|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:33.2305|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String, System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'FirstName' of type 'System.String' ... 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'FirstName' of type 'System.String' using the name 'FirstName' in request data ... 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'FirstName' of type 'System.String'. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'FirstName' of type 'System.String'. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'FirstName' of type 'System.String' ... 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'FirstName' of type 'System.String'. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'LastName' of type 'System.String' ... 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'LastName' of type 'System.String' using the name 'LastName' in request data ... 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'LastName' of type 'System.String'. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'LastName' of type 'System.String'. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'LastName' of type 'System.String' ... 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'LastName' of type 'System.String'. 
+2025-03-14 10:32:33.2305|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|GenerateGreeting method called with FirstName: Aryan, LastName: Tanisha 
+2025-03-14 10:32:33.2305|INFO|BusinessLayer.Service.GreetingBL|GenerateGreeting method called with FirstName: Aryan, LastName: Tanisha 
+2025-03-14 10:32:33.2305|INFO|BusinessLayer.Service.GreetingBL|Generated greeting message: Hello, Aryan Tanisha! 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:32:33.2305|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-14 10:32:33.2305|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 6.0866ms 
+2025-03-14 10:32:33.2305|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:32:33.2305|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting/GenerateGreeting/Aryan/Tanisha application/json 93 - 200 - application/json;+charset=utf-8 33.3628ms 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000002": started reading request body. 
+2025-03-14 10:32:33.2305|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000002": done reading request body. 
+2025-03-14 10:32:35.1103|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting/GenerateGreeting/Aryan/Tanisha application/json 93 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/GenerateGreeting/Aryan/Tanisha' 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting/GenerateGreeting/{FirstName?}/{LastName?}' is valid for the request path '/HelloGreeting/GenerateGreeting/Aryan/Tanisha' 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:35.1103|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:35.1103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String, System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'FirstName' of type 'System.String' ... 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'FirstName' of type 'System.String' using the name 'FirstName' in request data ... 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'FirstName' of type 'System.String'. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'FirstName' of type 'System.String'. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'FirstName' of type 'System.String' ... 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'FirstName' of type 'System.String'. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'LastName' of type 'System.String' ... 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'LastName' of type 'System.String' using the name 'LastName' in request data ... 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'LastName' of type 'System.String'. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'LastName' of type 'System.String'. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'LastName' of type 'System.String' ... 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'LastName' of type 'System.String'. 
+2025-03-14 10:32:35.1103|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|GenerateGreeting method called with FirstName: Aryan, LastName: Tanisha 
+2025-03-14 10:32:35.1103|INFO|BusinessLayer.Service.GreetingBL|GenerateGreeting method called with FirstName: Aryan, LastName: Tanisha 
+2025-03-14 10:32:35.1103|INFO|BusinessLayer.Service.GreetingBL|Generated greeting message: Hello, Aryan Tanisha! 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:32:35.1103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-14 10:32:35.1103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 0.5558ms 
+2025-03-14 10:32:35.1103|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:32:35.1103|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting/GenerateGreeting/Aryan/Tanisha application/json 93 - 200 - application/json;+charset=utf-8 2.4736ms 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000003": started reading request body. 
+2025-03-14 10:32:35.1103|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000003": done reading request body. 
+2025-03-14 10:32:45.4978|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting application/json 93 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:45.4978|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:45.4978|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:45.4978|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Get method called to retrieve default greeting message. 
+2025-03-14 10:32:45.4978|INFO|BusinessLayer.Service.GreetingBL|GetGreetingMessage method called. Returning default greeting. 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-03-14 10:32:45.4978|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'. 
+2025-03-14 10:32:45.4978|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 0.8409ms 
+2025-03-14 10:32:45.4978|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:32:45.4978|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting application/json 93 - 200 - text/plain;+charset=utf-8 2.1000ms 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000004": started reading request body. 
+2025-03-14 10:32:45.4978|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000004": done reading request body. 
+2025-03-14 10:32:50.7718|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting application/json 93 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:50.7718|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:50.7718|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:32:50.7718|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Get method called to retrieve default greeting message. 
+2025-03-14 10:32:50.7718|INFO|BusinessLayer.Service.GreetingBL|GetGreetingMessage method called. Returning default greeting. 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:32:50.7718|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-03-14 10:32:50.7718|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'. 
+2025-03-14 10:32:50.7756|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 0.9337ms 
+2025-03-14 10:32:50.7756|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:32:50.7756|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:32:50.7756|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting application/json 93 - 200 - text/plain;+charset=utf-8 4.1539ms 
+2025-03-14 10:32:50.7756|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000005": started reading request body. 
+2025-03-14 10:32:50.7756|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000005": done reading request body. 
+2025-03-14 10:33:13.4960|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetGreetingByID/6 application/json 93 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/GetGreetingByID/6' 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting/GetGreetingByID/{Id}' is valid for the request path '/HelloGreeting/GetGreetingByID/6' 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:13.4960|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:13.4960|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:13.4960|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|GetGreetingByID method called with ID: 6 
+2025-03-14 10:33:13.4960|INFO|BusinessLayer.Service.GreetingBL|GetGreetingById method called with ID: 6 
+2025-03-14 10:33:13.4960|INFO|RepositoryLayer.Service.GreetingRL|GetGreetingByIdRL method called with ID: 6 
+2025-03-14 10:33:13.4960|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:33:13.4960|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<GreetingEntity>()
+    .FirstOrDefault(e => e.Id == __id_0)' 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GreetingEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: GreetingEntity.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: GreetingEntity.Email (string) Required, 1], [Property: GreetingEntity.FirstName (string), 2], [Property: GreetingEntity.GreetingMessage (string) Required, 3], [Property: GreetingEntity.LastName (string), 4] }
+        SELECT TOP(1) g.Id, g.Email, g.FirstName, g.GreetingMessage, g.LastName
+        FROM Greetings AS g
+        WHERE g.Id == @__id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GreetingEntity>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:33:13.5109|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:13.5109|INFO|RepositoryLayer.Service.GreetingRL|Greeting retrieved successfully for ID: 6 
+2025-03-14 10:33:13.5109|INFO|BusinessLayer.Service.GreetingBL|Greeting message found for ID: 6 
+2025-03-14 10:33:13.5109|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Greeting message found for ID: 6 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:33:13.5109|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-14 10:33:13.5109|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 12.8082ms 
+2025-03-14 10:33:13.5109|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:33:13.5109|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetGreetingByID/6 application/json 93 - 200 - application/json;+charset=utf-8 21.0973ms 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000006": started reading request body. 
+2025-03-14 10:33:13.5109|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000006": done reading request body. 
+2025-03-14 10:33:20.6861|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetGreetingByID/3 application/json 93 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/GetGreetingByID/3' 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting/GetGreetingByID/{Id}' is valid for the request path '/HelloGreeting/GetGreetingByID/3' 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:20.6861|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:20.6861|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:33:20.6861|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:20.6962|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|GetGreetingByID method called with ID: 3 
+2025-03-14 10:33:20.6962|INFO|BusinessLayer.Service.GreetingBL|GetGreetingById method called with ID: 3 
+2025-03-14 10:33:20.6962|INFO|RepositoryLayer.Service.GreetingRL|GetGreetingByIdRL method called with ID: 3 
+2025-03-14 10:33:20.6962|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:33:20.6962|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:20.6962|WARN|RepositoryLayer.Service.GreetingRL|No greeting found for ID: 3 
+2025-03-14 10:33:20.6962|WARN|BusinessLayer.Service.GreetingBL|No greeting message found for ID: 3 
+2025-03-14 10:33:20.6962|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|No greeting message found for ID: 3 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:33:20.6962|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-14 10:33:20.6962|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 8.5347ms 
+2025-03-14 10:33:20.6962|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:33:20.6962|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetGreetingByID/3 application/json 93 - 404 - application/json;+charset=utf-8 18.9291ms 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000007": started reading request body. 
+2025-03-14 10:33:20.6962|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000007": done reading request body. 
+2025-03-14 10:33:25.7155|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetGreetingByID/4 application/json 93 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/GetGreetingByID/4' 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' with route pattern 'HelloGreeting/GetGreetingByID/{Id}' is valid for the request path '/HelloGreeting/GetGreetingByID/4' 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:25.7155|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:25.7155|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-14 10:33:25.7155|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|GetGreetingByID method called with ID: 4 
+2025-03-14 10:33:25.7155|INFO|BusinessLayer.Service.GreetingBL|GetGreetingById method called with ID: 4 
+2025-03-14 10:33:25.7155|INFO|RepositoryLayer.Service.GreetingRL|GetGreetingByIdRL method called with ID: 4 
+2025-03-14 10:33:25.7155|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:33:25.7155|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:25.7155|INFO|RepositoryLayer.Service.GreetingRL|Greeting retrieved successfully for ID: 4 
+2025-03-14 10:33:25.7155|INFO|BusinessLayer.Service.GreetingBL|Greeting message found for ID: 4 
+2025-03-14 10:33:25.7155|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Greeting message found for ID: 4 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:33:25.7155|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-14 10:33:25.7155|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp) in 1.9292ms 
+2025-03-14 10:33:25.7155|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (GreetingApp)' 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:33:25.7155|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetGreetingByID/4 application/json 93 - 200 - application/json;+charset=utf-8 2.6972ms 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000008": started reading request body. 
+2025-03-14 10:33:25.7155|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000008": done reading request body. 
+2025-03-14 10:33:42.7796|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetAllGreetingMessage application/json 93 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/GetAllGreetingMessage' 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (GreetingApp)' with route pattern 'HelloGreeting/GetAllGreetingMessage' is valid for the request path '/HelloGreeting/GetAllGreetingMessage' 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (GreetingApp)' 
+2025-03-14 10:33:42.7796|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (GreetingApp)' 
+2025-03-14 10:33:42.7796|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:42.7796|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:33:42.7796|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|GetAllGreetingMessage method called to retrieve all greetings. 
+2025-03-14 10:33:42.7796|INFO|BusinessLayer.Service.GreetingBL|GetAllGreetingMessage method called. 
+2025-03-14 10:33:42.7796|INFO|RepositoryLayer.Service.GreetingRL|GetAllGreetingMessageRL method called. 
+2025-03-14 10:33:42.7796|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:33:42.7918|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<GreetingEntity>()
+    .Select(g => new ResponseAllMessage{ 
+        Email = g.Email, 
+        FirstName = g.FirstName, 
+        LastName = g.LastName, 
+        Message = g.GreetingMessage 
+    }
+    )' 
+2025-03-14 10:33:42.8153|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ResponseAllMessage>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            Email -> 0
+            FirstName -> 1
+            LastName -> 2
+            Message -> 3
+        SELECT g.Email, g.FirstName, g.LastName, g.GreetingMessage AS Message
+        FROM Greetings AS g), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ResponseAllMessage>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)' 
+2025-03-14 10:33:42.8153|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:33:42.8153|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:33:42.8153|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:42.8153|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:42.8153|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [g].[Email], [g].[FirstName], [g].[LastName], [g].[GreetingMessage] AS [Message]
+FROM [Greetings] AS [g] 
+2025-03-14 10:33:42.8153|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [g].[Email], [g].[FirstName], [g].[LastName], [g].[GreetingMessage] AS [Message]
+FROM [Greetings] AS [g] 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:33:42.8237|INFO|RepositoryLayer.Service.GreetingRL|Retrieved 5 greeting messages. 
+2025-03-14 10:33:42.8237|INFO|BusinessLayer.Service.GreetingBL|Retrieved 5 greeting messages from the database. 
+2025-03-14 10:33:42.8237|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Retrieved 5 greeting messages. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:33:42.8237|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.Collections.Generic.List`1[[ModelLayer.Model.ResponseAllMessage, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-14 10:33:42.8237|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (GreetingApp) in 45.5527ms 
+2025-03-14 10:33:42.8237|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (GreetingApp)' 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAE" completed keep alive response. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:33:42.8237|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7059/HelloGreeting/GetAllGreetingMessage application/json 93 - 200 - application/json;+charset=utf-8 48.7757ms 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000009": started reading request body. 
+2025-03-14 10:33:42.8237|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAE", Request id "0HNB2MIG9HDAE:00000009": done reading request body. 
+2025-03-14 10:35:20.3925|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDAF" received FIN. 
+2025-03-14 10:35:20.3925|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAF" accepted. 
+2025-03-14 10:35:20.3925|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAF" started. 
+2025-03-14 10:35:20.4045|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAG" accepted. 
+2025-03-14 10:35:20.4045|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAG" started. 
+2025-03-14 10:35:20.4045|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-14 10:35:20.4045|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAF" stopped. 
+2025-03-14 10:35:20.4467|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB2MIG9HDAF" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-14 10:35:20.4705|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB2MIG9HDAG established using the following protocol: Tls13 
+2025-03-14 10:35:20.4802|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7059/HelloGreeting application/json 52 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' 
+2025-03-14 10:35:20.4802|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' 
+2025-03-14 10:35:20.4802|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Put", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Put(ModelLayer.Model.RequestUpdateModel) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel' ... 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel' using the name '' in request data ... 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000002": started reading request body. 
+2025-03-14 10:35:20.4802|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000002": done reading request body. 
+2025-03-14 10:35:20.4939|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestUpdateModel' 
+2025-03-14 10:35:20.4939|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel'. 
+2025-03-14 10:35:20.4939|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel'. 
+2025-03-14 10:35:20.4939|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel' ... 
+2025-03-14 10:35:20.4939|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel'. 
+2025-03-14 10:35:20.4939|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Put method called with RequestUpdateModel: {"Id":6, "Message":"Updated Aryan"} 
+2025-03-14 10:35:20.4939|INFO|BusinessLayer.Service.GreetingBL|UpdateGreetingMessage method called with RequestUpdateModel: {"Id":6, "Message":"Updated Aryan"} 
+2025-03-14 10:35:20.4939|INFO|RepositoryLayer.Service.GreetingRL|UpdateGreetingMessageRL method called with ID: 6 
+2025-03-14 10:35:20.4939|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:35:20.4939|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<GreetingEntity>()
+    .FirstOrDefault(g => g.Id == __requestUpdateModel_Id_0)' 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GreetingEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: GreetingEntity.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: GreetingEntity.Email (string) Required, 1], [Property: GreetingEntity.FirstName (string), 2], [Property: GreetingEntity.GreetingMessage (string) Required, 3], [Property: GreetingEntity.LastName (string), 4] }
+        SELECT TOP(1) g.Id, g.Email, g.FirstName, g.GreetingMessage, g.LastName
+        FROM Greetings AS g
+        WHERE g.Id == @__requestUpdateModel_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GreetingEntity>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__requestUpdateModel_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__requestUpdateModel_Id_0 
+2025-03-14 10:35:20.5100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__requestUpdateModel_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__requestUpdateModel_Id_0 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'UserContext'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'UserContext'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The unchanged property 'GreetingEntity.GreetingMessage' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'GreetingEntity' tracked by 'UserContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'UserContext'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:35:20.5100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Greetings] SET [GreetingMessage] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; 
+2025-03-14 10:35:20.5278|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Greetings] SET [GreetingMessage] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'GreetingEntity' tracked by 'UserContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'UserContext' with 1 entities written to the database. 
+2025-03-14 10:35:20.5278|INFO|RepositoryLayer.Service.GreetingRL|Greeting updated successfully for ID: 6 
+2025-03-14 10:35:20.5278|INFO|BusinessLayer.Service.GreetingBL|Greeting message updated successfully for ID: 6 
+2025-03-14 10:35:20.5278|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Greeting message updated successfully for ID: 6 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:35:20.5278|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.ResponseAllMessage, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:35:20.5278|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp) in 42.2302ms 
+2025-03-14 10:35:20.5278|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAG" completed keep alive response. 
+2025-03-14 10:35:20.5278|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:35:20.5278|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7059/HelloGreeting application/json 52 - 200 - application/json;+charset=utf-8 54.5053ms 
+2025-03-14 10:35:30.7134|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7059/HelloGreeting application/json 52 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting' 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' with route pattern 'HelloGreeting' is valid for the request path '/HelloGreeting' 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' 
+2025-03-14 10:35:30.7134|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' 
+2025-03-14 10:35:30.7134|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Put", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Put(ModelLayer.Model.RequestUpdateModel) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel' ... 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel' using the name '' in request data ... 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000003": started reading request body. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000003": done reading request body. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.Model.RequestUpdateModel' 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel'. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel'. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel' ... 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'requestUpdateModel' of type 'ModelLayer.Model.RequestUpdateModel'. 
+2025-03-14 10:35:30.7134|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Put method called with RequestUpdateModel: {"Id":3, "Message":"Updated Aryan"} 
+2025-03-14 10:35:30.7134|INFO|BusinessLayer.Service.GreetingBL|UpdateGreetingMessage method called with RequestUpdateModel: {"Id":3, "Message":"Updated Aryan"} 
+2025-03-14 10:35:30.7134|INFO|RepositoryLayer.Service.GreetingRL|UpdateGreetingMessageRL method called with ID: 3 
+2025-03-14 10:35:30.7134|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__requestUpdateModel_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__requestUpdateModel_Id_0 
+2025-03-14 10:35:30.7134|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__requestUpdateModel_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__requestUpdateModel_Id_0 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:35:30.7134|WARN|RepositoryLayer.Service.GreetingRL|No greeting found for ID: 3 
+2025-03-14 10:35:30.7134|WARN|BusinessLayer.Service.GreetingBL|No greeting message found for ID: 3 
+2025-03-14 10:35:30.7134|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|No greeting message found for ID: 3 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:35:30.7134|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.ResponseAllMessage, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:35:30.7134|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp) in 5.0379ms 
+2025-03-14 10:35:30.7134|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (GreetingApp)' 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAG" completed keep alive response. 
+2025-03-14 10:35:30.7134|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:35:30.7134|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7059/HelloGreeting application/json 52 - 404 - application/json;+charset=utf-8 6.3839ms 
+2025-03-14 10:36:02.1720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PUT https://localhost:7059/HelloGreeting/DeleteGreetingMessage/6 application/json 52 
+2025-03-14 10:36:02.1720|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/DeleteGreetingMessage/6' 
+2025-03-14 10:36:02.1720|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2025-03-14 10:36:02.1720|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported' 
+2025-03-14 10:36:02.1720|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported' 
+2025-03-14 10:36:02.1720|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAG" completed keep alive response. 
+2025-03-14 10:36:02.1720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PUT https://localhost:7059/HelloGreeting/DeleteGreetingMessage/6 application/json 52 - 405 0 - 8.2152ms 
+2025-03-14 10:36:02.1720|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000004": started reading request body. 
+2025-03-14 10:36:02.1720|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000004": done reading request body. 
+2025-03-14 10:36:17.8882|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7059/HelloGreeting/DeleteGreetingMessage/6 application/json 52 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/DeleteGreetingMessage/6' 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' with route pattern 'HelloGreeting/DeleteGreetingMessage/{Id}' is valid for the request path '/HelloGreeting/DeleteGreetingMessage/6' 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' 
+2025-03-14 10:36:17.8882|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' 
+2025-03-14 10:36:17.8882|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'Id' of type 'System.Int32' ... 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'Id' of type 'System.Int32' using the name 'Id' in request data ... 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'Id' of type 'System.Int32'. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'Id' of type 'System.Int32'. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'Id' of type 'System.Int32' ... 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'Id' of type 'System.Int32'. 
+2025-03-14 10:36:17.8882|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Delete method called with ID: 6 
+2025-03-14 10:36:17.8882|INFO|BusinessLayer.Service.GreetingBL|DeleteGreeting method called with ID: 6 
+2025-03-14 10:36:17.8882|INFO|RepositoryLayer.Service.GreetingRL|DeleteGreetingMessageRL method called with ID: 6 
+2025-03-14 10:36:17.8882|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:36:17.8882|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'GreetingEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.8882|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'GreetingEntity' tracked by 'UserContext' changed state from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'UserContext'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'UserContext'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'UserContext'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Greetings]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT; 
+2025-03-14 10:36:17.9029|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Greetings]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT; 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:17.9029|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'GreetingEntity' tracked by 'UserContext' changed state from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'UserContext' with 1 entities written to the database. 
+2025-03-14 10:36:17.9198|INFO|RepositoryLayer.Service.GreetingRL|Greeting deleted successfully for ID: 6 
+2025-03-14 10:36:17.9198|INFO|BusinessLayer.Service.GreetingBL|Greeting message deleted successfully for ID: 6 
+2025-03-14 10:36:17.9198|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Greeting message deleted successfully for ID: 6 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:36:17.9198|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.ResponseAllMessage, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:36:17.9198|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp) in 28.8459ms 
+2025-03-14 10:36:17.9198|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAG" completed keep alive response. 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:36:17.9198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7059/HelloGreeting/DeleteGreetingMessage/6 application/json 52 - 200 - application/json;+charset=utf-8 32.5536ms 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000005": started reading request body. 
+2025-03-14 10:36:17.9198|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000005": done reading request body. 
+2025-03-14 10:36:23.2884|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 DELETE https://localhost:7059/HelloGreeting/DeleteGreetingMessage/6 application/json 52 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/HelloGreeting/DeleteGreetingMessage/6' 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' with route pattern 'HelloGreeting/DeleteGreetingMessage/{Id}' is valid for the request path '/HelloGreeting/DeleteGreetingMessage/6' 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' 
+2025-03-14 10:36:23.3138|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' 
+2025-03-14 10:36:23.3138|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp). 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:36:23.3138|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller HelloGreetingApplication.Controllers.HelloGreetingController (GreetingApp) 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'Id' of type 'System.Int32' ... 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'Id' of type 'System.Int32' using the name 'Id' in request data ... 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'Id' of type 'System.Int32'. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'Id' of type 'System.Int32'. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'Id' of type 'System.Int32' ... 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'Id' of type 'System.Int32'. 
+2025-03-14 10:36:23.3228|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Delete method called with ID: 6 
+2025-03-14 10:36:23.3228|INFO|BusinessLayer.Service.GreetingBL|DeleteGreeting method called with ID: 6 
+2025-03-14 10:36:23.3228|INFO|RepositoryLayer.Service.GreetingRL|DeleteGreetingMessageRL method called with ID: 6 
+2025-03-14 10:36:23.3228|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:36:23.3228|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[Email], [g].[FirstName], [g].[GreetingMessage], [g].[LastName]
+FROM [Greetings] AS [g]
+WHERE [g].[Id] = @__id_0 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-14 10:36:23.3228|WARN|RepositoryLayer.Service.GreetingRL|No greeting found for ID: 6 
+2025-03-14 10:36:23.3228|WARN|BusinessLayer.Service.GreetingBL|No greeting message found for ID: 6 
+2025-03-14 10:36:23.3228|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|No greeting message found for ID: 6 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-14 10:36:23.3228|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.ResponseAllMessage, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-14 10:36:23.3228|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp) in 6.825ms 
+2025-03-14 10:36:23.3228|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (GreetingApp)' 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB2MIG9HDAG" completed keep alive response. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-14 10:36:23.3228|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 DELETE https://localhost:7059/HelloGreeting/DeleteGreetingMessage/6 application/json 52 - 404 - application/json;+charset=utf-8 38.6359ms 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000006": started reading request body. 
+2025-03-14 10:36:23.3228|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB2MIG9HDAG", Request id "0HNB2MIG9HDAG:00000006": done reading request body. 
