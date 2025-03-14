@@ -14,5 +14,6 @@ namespace RepositoryLayer.Interface
         public string GetGreetingByIdRL(int id);
         public List<ResponseAllMessage> GetAllGreetingMessageRL();
         public ResponseAllMessage UpdateGreetingMessageRL(RequestUpdateModel requestUpdateModel);
+        public ResponseAllMessage DeleteGreetingMessageRL(int id);
     }
 }

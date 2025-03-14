@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.Logging;
 using ModelLayer.Model;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Context;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata.Ecma335;
 
 namespace RepositoryLayer.Service
 {
@@ -19,14 +14,17 @@ namespace RepositoryLayer.Service
     public class GreetingRL : IGreetingRL
     {
         private readonly UserContext _Context;
+        private readonly ILogger<GreetingRL> _logger;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GreetingRL"/> class.
         /// </summary>
         /// <param name="context">The database context used for accessing greetings.</param>
-        public GreetingRL(UserContext context)
+        /// <param name="logger">Logger instance for logging operations.</param>
+        public GreetingRL(UserContext context, ILogger<GreetingRL> logger)
         {
             _Context = context;
+            _logger = logger;
         }
 
         /// <summary>
@@ -40,6 +38,8 @@ namespace RepositoryLayer.Service
         /// </returns>
         public GreetingEntity AddGreeting(RequestGreetingModel requestGreetingModel, string Message)
         {
+            _logger.LogInformation("AddGreeting method called with Email: {Email}", requestGreetingModel.Email);
+
             var ExistingUser = _Context.Greetings.FirstOrDefault<GreetingEntity>(e => e.Email == requestGreetingModel.Email);
             if (ExistingUser == null)
             {
@@ -52,8 +52,12 @@ namespace RepositoryLayer.Service
                 };
                 _Context.Greetings.Add(newGreeting);
                 _Context.SaveChanges();
+
+                _logger.LogInformation("Greeting added successfully for Email: {Email}", requestGreetingModel.Email);
                 return newGreeting;
             }
+
+            _logger.LogWarning("Greeting already exists for Email: {Email}", requestGreetingModel.Email);
             return null;
         }
 
@@ -66,11 +70,16 @@ namespace RepositoryLayer.Service
         /// </returns>
         public string GetGreetingByIdRL(int id)
         {
+            _logger.LogInformation("GetGreetingByIdRL method called with ID: {Id}", id);
+
             var GreetingIDExist = _Context.Greetings.FirstOrDefault(e => e.Id == id);
             if (GreetingIDExist == null)
             {
+                _logger.LogWarning("No greeting found for ID: {Id}", id);
                 return null;
             }
+
+            _logger.LogInformation("Greeting retrieved successfully for ID: {Id}", id);
             return GreetingIDExist.GreetingMessage;
         }
 
@@ -83,14 +92,18 @@ namespace RepositoryLayer.Service
         /// </returns>
         public List<ResponseAllMessage> GetAllGreetingMessageRL()
         {
-            return _Context.Greetings.Select(g => new ResponseAllMessage
+            _logger.LogInformation("GetAllGreetingMessageRL method called.");
+
+            var greetings = _Context.Greetings.Select(g => new ResponseAllMessage
             {
                 Email = g.Email,
                 FirstName = g.FirstName,
                 LastName = g.LastName,
                 Message = g.GreetingMessage,
-
             }).ToList();
+
+            _logger.LogInformation("Retrieved {Count} greeting messages.", greetings.Count);
+            return greetings;
         }
 
         /// <summary>
@@ -103,11 +116,15 @@ namespace RepositoryLayer.Service
         /// </returns>
         public ResponseAllMessage UpdateGreetingMessageRL(RequestUpdateModel requestUpdateModel)
         {
+            _logger.LogInformation("UpdateGreetingMessageRL method called with ID: {Id}", requestUpdateModel.Id);
+
             var GreetingEntity = _Context.Greetings.FirstOrDefault(g => g.Id == requestUpdateModel.Id);
             if (GreetingEntity != null)
             {
                 GreetingEntity.GreetingMessage = requestUpdateModel.Message;
                 _Context.SaveChanges();
+
+                _logger.LogInformation("Greeting updated successfully for ID: {Id}", requestUpdateModel.Id);
                 return new ResponseAllMessage
                 {
                     Email = GreetingEntity.Email,
@@ -116,6 +133,40 @@ namespace RepositoryLayer.Service
                     Message = GreetingEntity.GreetingMessage,
                 };
             }
+
+            _logger.LogWarning("No greeting found for ID: {Id}", requestUpdateModel.Id);
+            return null;
+        }
+
+        /// <summary>
+        /// Deletes a greeting message from the database if it exists.
+        /// </summary>
+        /// <param name="id">The unique identifier of the greeting message to be deleted.</param>
+        /// <returns>
+        /// Returns a <see cref="ResponseAllMessage"/> object containing the details of the deleted greeting message
+        /// if it existed, otherwise returns <c>null</c>.
+        /// </returns>
+        public ResponseAllMessage DeleteGreetingMessageRL(int id)
+        {
+            _logger.LogInformation("DeleteGreetingMessageRL method called with ID: {Id}", id);
+
+            var GreetingUser = _Context.Greetings.FirstOrDefault(e => e.Id == id);
+            if (GreetingUser != null)
+            {
+                _Context.Remove(GreetingUser);
+                _Context.SaveChanges();
+
+                _logger.LogInformation("Greeting deleted successfully for ID: {Id}", id);
+                return new ResponseAllMessage
+                {
+                    Email = GreetingUser.Email,
+                    FirstName = GreetingUser.FirstName,
+                    LastName = GreetingUser.LastName,
+                    Message = GreetingUser.GreetingMessage,
+                };
+            }
+
+            _logger.LogWarning("No greeting found for ID: {Id}", id);
             return null;
         }
     }

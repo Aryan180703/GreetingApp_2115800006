@@ -16,5 +16,6 @@ namespace BusinessLayer.Interface
         public ResponseModel<string> GetGreetingById(int id);
         public ResponseModel<List<ResponseAllMessage>> GetAllGreetingMessage();
         public ResponseModel<ResponseAllMessage> UpdateGreetingMessage(RequestUpdateModel requestUpdateModel);
+        public ResponseModel<ResponseAllMessage> DeleteGreeting(int id);
     }
 }
