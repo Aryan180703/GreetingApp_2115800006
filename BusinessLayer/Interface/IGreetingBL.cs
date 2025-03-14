@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ModelLayer.DTOs;
 using ModelLayer.Model;
+using ModelLayer.Models;
 using RepositoryLayer.Entity;
 
 namespace BusinessLayer.Interface
@@ -17,5 +19,7 @@ namespace BusinessLayer.Interface
         public ResponseModel<List<ResponseAllMessage>> GetAllGreetingMessage();
         public ResponseModel<ResponseAllMessage> UpdateGreetingMessage(RequestUpdateModel requestUpdateModel);
         public ResponseModel<ResponseAllMessage> DeleteGreeting(int id);
+        public ResponseModel<ResponseRegister> RegisterBL(UserModel user);
+        public ResponseModel<ResponseRegister> LoginBL(LoginDTO login);
     }
 }

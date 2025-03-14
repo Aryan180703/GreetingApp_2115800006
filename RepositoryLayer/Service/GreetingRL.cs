@@ -4,6 +4,8 @@ using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Context;
 using Microsoft.EntityFrameworkCore;
+using ModelLayer.Models;
+using ModelLayer.DTOs;
 
 namespace RepositoryLayer.Service
 {
@@ -169,5 +171,72 @@ namespace RepositoryLayer.Service
             _logger.LogWarning("No greeting found for ID: {Id}", id);
             return null;
         }
+
+
+        /// <summary>
+        /// Registers a new user by checking for an existing email, 
+        /// saving the user details in the database, and returning the registered user's information.
+        /// Returns null if the email is already registered.
+        /// </summary>
+        /// <param name="userModel">The user details containing Email, FirstName, LastName, and Password.</param>
+        /// <returns>
+        /// A <see cref="ResponseRegister"/> object containing the registered user's Email, FirstName, and LastName.
+        /// Returns null if the email is already in use.
+        /// </returns>
+        public ResponseRegister RegisterRL(UserModel userModel)
+        {
+            _logger.LogInformation("Checking if user with email {Email} already exists.", userModel.Email);
+            var ExistingUser = _Context.Users.FirstOrDefault(e => e.Email == userModel.Email);
+
+            if (ExistingUser != null)
+            {
+                _logger.LogWarning("User with email {Email} already exists. Registration aborted.", userModel.Email);
+                return null;
+            }
+
+            var newUser = new UserEntity
+            {
+                Email = userModel.Email,
+                FirstName = userModel.FirstName,
+                LastName = userModel.LastName,
+                Password = userModel.Password,
+            };
+
+            _Context.Users.Add(newUser);
+            _Context.SaveChanges();
+            _logger.LogInformation("User with email {Email} successfully registered.", newUser.Email);
+
+            return new ResponseRegister
+            {
+                Id = newUser.Id,
+                Email = newUser.Email,
+                FirstName = newUser.FirstName,
+                LastName = newUser.LastName,
+            };
+        }
+
+        /// <summary>
+        /// Retrieves the user entity based on the provided email.
+        /// </summary>
+        /// <param name="login">The login details containing the email.</param>
+        /// <returns>
+        /// Returns the user entity if the email exists in the database.
+        /// Returns null if no user is found with the given email.
+        /// </returns>
+        public UserEntity LoginRL(LoginDTO login)
+        {
+            _logger.LogInformation("Login request received for email: {Email}", login.Email);
+
+            var UserExist = _Context.Users.FirstOrDefault(e => e.Email == login.Email);
+            if (UserExist != null)
+            {
+                _logger.LogInformation("User found with email: {Email}", login.Email);
+                return UserExist;
+            }
+
+            _logger.LogWarning("No user registered with email: {Email}", login.Email);
+            return null;
+        }
+
     }
 }
