@@ -13,6 +13,7 @@ namespace RepositoryLayer.Context
         public UserContext(DbContextOptions<UserContext> options) : base(options) { }
 
         public DbSet<GreetingEntity> Greetings { get; set; }
+        public DbSet<UserEntity> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Make FirstName and LastName optional in the database

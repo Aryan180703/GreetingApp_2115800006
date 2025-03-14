@@ -1,6 +1,9 @@
 ﻿using BusinessLayer.Interface;
+using BusinessLayer.Utils;
 using Microsoft.Extensions.Logging;
+using ModelLayer.DTOs;
 using ModelLayer.Model;
+using ModelLayer.Models;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 
@@ -258,5 +261,98 @@ namespace BusinessLayer.Service
                 Data = responseFromRL
             };
         }
+
+        /// <summary>
+        /// Registers a new user in the system.
+        /// </summary>
+        /// <param name="user">The user details required for registration.</param>
+        /// <returns>
+        /// Returns a response model containing registration status:
+        /// - If registration is successful, returns Success = true with user details.
+        /// - If the user is already registered, returns Success = false with an appropriate message.
+        /// </returns>
+        public ResponseModel<ResponseRegister> RegisterBL(UserModel user)
+        {
+            _logger.LogInformation("User registration process started for email: {Email}", user.Email);
+
+            user.Password = PasswordHasherService.HashPassword(user.Password);
+            ResponseRegister response = _greetingRL.RegisterRL(user);
+
+            if (response == null)
+            {
+                _logger.LogWarning("User registration failed. Email {Email} is already registered.", user.Email);
+                return new ResponseModel<ResponseRegister>
+                {
+                    Success = false,
+                    Message = "User already Registered",
+                    Data = null
+                };
+            }
+
+            _logger.LogInformation("User registration successful for email: {Email}", user.Email);
+            return new ResponseModel<ResponseRegister>
+            {
+                Success = true,
+                Message = "User Registration Successful",
+                Data = response
+            };
+        }
+
+
+        /// <summary>
+        /// Handles user login by verifying credentials and returning user details if authentication is successful.
+        /// </summary>
+        /// <param name="login">The login details including email and password.</param>
+        /// <returns>
+        /// Returns a success response if authentication is successful.
+        /// Returns a failure response if the email is not registered or the password is incorrect.
+        /// </returns>
+        public ResponseModel<ResponseRegister> LoginBL(LoginDTO login)
+        {
+            _logger.LogInformation("Login process started for email: {Email}", login.Email);
+
+            //login.Password = PasswordHasherService.HashPassword(login.Password);
+            UserEntity response = _greetingRL.LoginRL(login);
+
+            if (response != null)
+            {
+                bool PasswordCheck = PasswordHasherService.VerifyPassword(login.Password, response.Password);
+                if (PasswordCheck)
+                {
+                    _logger.LogInformation("User successfully logged in: {Email}", login.Email);
+                    return new ResponseModel<ResponseRegister>
+                    {
+                        Success = true,
+                        Message = "User Logged in",
+                        Data = new ResponseRegister
+                        {
+                            Id = response.Id,
+                            Email = response.Email,
+                            FirstName = response.FirstName,
+                            LastName = response.LastName,
+                        }
+                    };
+                }
+
+                _logger.LogWarning("Login failed - Incorrect password for email: {Email}", login.Email);
+                return new ResponseModel<ResponseRegister>
+                {
+                    Success = false,
+                    Message = "Wrong Password",
+                    Data = null
+                };
+            }
+
+            _logger.LogWarning("Login failed - No user registered with email: {Email}", login.Email);
+            return new ResponseModel<ResponseRegister>
+            {
+                Success = false,
+                Message = "No user registed with this Email",
+                Data = null
+            };
+            
+        }
+
+
     }
 }
