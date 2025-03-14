@@ -6,6 +6,7 @@ using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
 using NLog;
 using NLog.Web;
+using GreetingApp.Middleware;
 
 var logger = LogManager.Setup().LoadConfigurationFromFile("Nlog.config").GetCurrentClassLogger();
 logger.Info("Application is starting...");
@@ -24,11 +25,22 @@ try
     builder.Services.AddControllers();
     builder.Services.AddDbContext<UserContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection")));
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+
 
     var app = builder.Build();
 
+    app.UseGlobalExcepMiddleware();
+
     // Configure the HTTP request pipeline.
     app.UseHttpsRedirection();
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
     app.UseAuthorization();
     app.MapControllers();
 

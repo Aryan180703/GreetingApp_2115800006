@@ -83,3 +83,8 @@ C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\Nlog.confi
 C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\NLog.dll
 C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\NLog.Extensions.Logging.dll
 C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Holi Projects\GreetingApp\GreetingApp\GreetingApp\obj\Debug\net6.0\GreetingApp.MvcApplicationPartsAssemblyInfo.cs
