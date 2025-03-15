@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Holi Projects\\GreetingApp\\GreetingApp\\RepositoryLayer\\RepositoryLayer.csproj": {}
+    "C:\\newGA\\RepositoryLayer\\RepositoryLayer.csproj": {}
   },
   "projects": {
-    "C:\\Holi Projects\\GreetingApp\\GreetingApp\\ModelLayer\\ModelLayer.csproj": {
+    "C:\\newGA\\ModelLayer\\ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Holi Projects\\GreetingApp\\GreetingApp\\ModelLayer\\ModelLayer.csproj",
+        "projectUniqueName": "C:\\newGA\\ModelLayer\\ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "C:\\Holi Projects\\GreetingApp\\GreetingApp\\ModelLayer\\ModelLayer.csproj",
+        "projectPath": "C:\\newGA\\ModelLayer\\ModelLayer.csproj",
         "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Holi Projects\\GreetingApp\\GreetingApp\\ModelLayer\\obj\\",
+        "outputPath": "C:\\newGA\\ModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Holi Projects\\GreetingApp\\GreetingApp\\RepositoryLayer\\RepositoryLayer.csproj": {
+    "C:\\newGA\\RepositoryLayer\\RepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Holi Projects\\GreetingApp\\GreetingApp\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectUniqueName": "C:\\newGA\\RepositoryLayer\\RepositoryLayer.csproj",
         "projectName": "RepositoryLayer",
-        "projectPath": "C:\\Holi Projects\\GreetingApp\\GreetingApp\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectPath": "C:\\newGA\\RepositoryLayer\\RepositoryLayer.csproj",
         "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Holi Projects\\GreetingApp\\GreetingApp\\RepositoryLayer\\obj\\",
+        "outputPath": "C:\\newGA\\RepositoryLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Holi Projects\\GreetingApp\\GreetingApp\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "C:\\Holi Projects\\GreetingApp\\GreetingApp\\ModelLayer\\ModelLayer.csproj"
+              "C:\\newGA\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\newGA\\ModelLayer\\ModelLayer.csproj"
               }
             }
           }

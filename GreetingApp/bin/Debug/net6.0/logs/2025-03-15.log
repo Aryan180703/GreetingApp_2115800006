@@ -1,0 +1,858 @@
+2025-03-15 00:48:08.9124|INFO|GreetingApp.Program|Application is starting... 
+2025-03-15 00:48:10.6042|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-15 00:48:10.7440|INFO|GreetingApp.Program|Application has started successfully. 
+2025-03-15 00:48:10.7539|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-03-15 00:48:10.8523|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-03-15 00:48:10.8694|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Repository contains no viable default key. Caller should generate a key with immediate activation. 
+2025-03-15 00:48:10.8694|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Policy resolution states that a new key should be added to the key ring. 
+2025-03-15 00:48:10.8768|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Creating key {537e5949-ac3f-441c-b65c-b0c0a6733099} with creation date 2025-03-14 19:18:10Z, activation date 2025-03-14 19:18:10Z, and expiration date 2025-06-12 19:18:10Z. 
+2025-03-15 00:48:10.8989|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Descriptor deserializer type for key {537e5949-ac3f-441c-b65c-b0c0a6733099} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. 
+2025-03-15 00:48:10.9110|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No key escrow sink found. Not writing key {537e5949-ac3f-441c-b65c-b0c0a6733099} to escrow. 
+2025-03-15 00:48:10.9197|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor|Encrypting to Windows DPAPI for current user account (DESKTOP-11S3PTK\aryan). 
+2025-03-15 00:48:10.9197|INFO|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Writing data to file 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys\key-537e5949-ac3f-441c-b65c-b0c0a6733099.xml'. 
+2025-03-15 00:48:10.9197|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Key cache expiration token triggered by 'CreateNewKey' operation. 
+2025-03-15 00:48:10.9197|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys\key-537e5949-ac3f-441c-b65c-b0c0a6733099.xml'. 
+2025-03-15 00:48:10.9970|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {537e5949-ac3f-441c-b65c-b0c0a6733099}. 
+2025-03-15 00:48:11.0082|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {537e5949-ac3f-441c-b65c-b0c0a6733099} with expiration date 2025-06-12 19:18:10Z as default key. 
+2025-03-15 00:48:11.0082|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 00:48:11.0082|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2025-03-15 00:48:11.0135|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 00:48:11.0135|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2025-03-15 00:48:11.0135|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2025-03-15 00:48:11.0291|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {537e5949-ac3f-441c-b65c-b0c0a6733099} as the default key. 
+2025-03-15 00:48:11.0291|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {537e5949-ac3f-441c-b65c-b0c0a6733099} was loaded during application startup. 
+2025-03-15 00:48:11.5803|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 039D5383BD8FB363D3CEC0BD6FC84A3A81D730B8) 
+2025-03-15 00:48:11.7418|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7059 
+2025-03-15 00:48:11.7418|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5063 
+2025-03-15 00:48:11.7418|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GreetingApp 
+2025-03-15 00:48:11.7418|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-15 00:48:11.7418|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-15 00:48:11.7418|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-15 00:48:11.8419|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-15 00:48:11.8419|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-15 00:48:11.8419|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\newGA\GreetingApp\ 
+2025-03-15 00:48:11.8419|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-03-15 00:48:12.0599|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS11" accepted. 
+2025-03-15 00:48:12.0600|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS10" accepted. 
+2025-03-15 00:48:12.0600|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS10" started. 
+2025-03-15 00:48:12.0600|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS11" started. 
+2025-03-15 00:48:12.0921|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35JR6QS11" received FIN. 
+2025-03-15 00:48:12.0921|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35JR6QS10" received FIN. 
+2025-03-15 00:48:12.1448|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 00:48:12.1448|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 00:48:12.4756|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS11" stopped. 
+2025-03-15 00:48:12.4756|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS10" stopped. 
+2025-03-15 00:48:12.4849|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35JR6QS10" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 00:48:12.4849|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35JR6QS11" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 00:48:12.5518|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS12" accepted. 
+2025-03-15 00:48:12.5518|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35JR6QS12" started. 
+2025-03-15 00:48:12.7148|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB35JR6QS12 established using the following protocol: Tls13 
+2025-03-15 00:48:12.8094|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.html - - 
+2025-03-15 00:48:13.1673|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-03-15 00:48:13.2176|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-03-15 00:48:13.2176|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 00:48:13.4179|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-03-15 00:48:13.4206|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-03-15 00:48:13.4687|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-03-15 00:48:13.4687|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-03-15 00:48:13.4851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_vs/browserLink - - 
+2025-03-15 00:48:13.4851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.js - - 
+2025-03-15 00:48:13.4851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-15 00:48:13.4851|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.js' 
+2025-03-15 00:48:13.4851|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 00:48:13.4851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.html - - - 200 - text/html;charset=utf-8 690.5435ms 
+2025-03-15 00:48:13.4851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.js - - - 200 - application/javascript;charset=utf-8 8.0456ms 
+2025-03-15 00:48:13.5187|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 31.4071ms 
+2025-03-15 00:48:13.6076|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.5043ms 
+2025-03-15 00:48:13.6695|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - 
+2025-03-15 00:48:13.6695|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-15 00:48:13.6695|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 00:48:13.6695|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.8585ms 
+2025-03-15 00:49:27.2630|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7059/api/User/login application/json 61 
+2025-03-15 00:49:27.2865|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 00:49:27.2865|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 00:49:27.2865|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 00:49:27.2865|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 00:49:27.2968|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 00:49:27.3349|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 00:49:27.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 00:49:27.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 00:49:27.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 00:49:27.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 00:49:27.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 00:49:27.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 00:49:27.7213|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2025-03-15 00:49:27.7703|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 00:49:27.8038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 00:49:27.8038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 00:49:27.8160|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 00:49:27.8351|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35JR6QS12", Request id "0HNB35JR6QS12:0000000B": started reading request body. 
+2025-03-15 00:49:27.8351|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35JR6QS12", Request id "0HNB35JR6QS12:0000000B": done reading request body. 
+2025-03-15 00:49:27.8460|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 00:49:27.8460|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 00:49:27.8460|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 00:49:27.8460|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 00:49:27.8616|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 00:49:27.8616|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 00:49:27.8616|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 00:49:27.8953|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 00:49:28.8688|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 00:49:29.0683|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<UserEntity>()
+    .FirstOrDefault(e => e.Email == __login_Email_0)' 
+2025-03-15 00:49:29.5740|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.Email (string) Required, 1], [Property: UserEntity.FirstName (string) Required, 2], [Property: UserEntity.LastName (string) Required, 3], [Property: UserEntity.Password (string) Required, 4] }
+        SELECT TOP(1) u.Id, u.Email, u.FirstName, u.LastName, u.Password
+        FROM Users AS u
+        WHERE u.Email == @__login_Email_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-15 00:49:29.6569|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 00:49:29.7510|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (90ms). 
+2025-03-15 00:49:29.7908|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:49:30.7392|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:49:30.7617|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 00:49:30.8966|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (136ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 00:49:31.0025|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 00:49:31.0939|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 00:49:31.0939|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:49:31.1317|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:49:31.1317|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 00:51:01.2581|INFO|GreetingApp.Program|Application is starting... 
+2025-03-15 00:51:02.3545|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-15 00:51:02.4390|INFO|GreetingApp.Program|Application has started successfully. 
+2025-03-15 00:51:02.4390|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-03-15 00:51:02.5285|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-03-15 00:51:02.5359|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys\key-537e5949-ac3f-441c-b65c-b0c0a6733099.xml'. 
+2025-03-15 00:51:02.5483|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {537e5949-ac3f-441c-b65c-b0c0a6733099}. 
+2025-03-15 00:51:02.5633|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {537e5949-ac3f-441c-b65c-b0c0a6733099} with expiration date 2025-06-12 19:18:10Z as default key. 
+2025-03-15 00:51:02.5633|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 00:51:02.5633|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2025-03-15 00:51:02.5633|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 00:51:02.5836|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2025-03-15 00:51:02.5836|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2025-03-15 00:51:02.5935|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {537e5949-ac3f-441c-b65c-b0c0a6733099} as the default key. 
+2025-03-15 00:51:02.5935|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {537e5949-ac3f-441c-b65c-b0c0a6733099} was loaded during application startup. 
+2025-03-15 00:51:02.9563|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 039D5383BD8FB363D3CEC0BD6FC84A3A81D730B8) 
+2025-03-15 00:51:03.0187|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7059 
+2025-03-15 00:51:03.0187|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5063 
+2025-03-15 00:51:03.0187|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GreetingApp 
+2025-03-15 00:51:03.0187|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-15 00:51:03.0187|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-15 00:51:03.0187|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-15 00:51:03.0985|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-15 00:51:03.0985|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-15 00:51:03.0985|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\newGA\GreetingApp\ 
+2025-03-15 00:51:03.0985|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-03-15 00:51:03.4992|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68F" received FIN. 
+2025-03-15 00:51:03.4992|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68G" received FIN. 
+2025-03-15 00:51:03.5220|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68G" accepted. 
+2025-03-15 00:51:03.5220|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68F" accepted. 
+2025-03-15 00:51:03.5220|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68F" started. 
+2025-03-15 00:51:03.5220|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68G" started. 
+2025-03-15 00:51:03.5588|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 00:51:03.5588|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 00:51:03.6167|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68G" stopped. 
+2025-03-15 00:51:03.6167|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68F" stopped. 
+2025-03-15 00:51:03.6242|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68G" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 00:51:03.6242|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68F" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 00:51:05.1450|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68H" accepted. 
+2025-03-15 00:51:05.1450|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68H" started. 
+2025-03-15 00:51:05.2145|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB35LE9R68H established using the following protocol: Tls13 
+2025-03-15 00:51:05.3499|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.html - - 
+2025-03-15 00:51:05.5972|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-03-15 00:51:05.6266|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-03-15 00:51:05.6266|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 00:51:05.7720|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-03-15 00:51:05.7720|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-03-15 00:51:05.8113|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-03-15 00:51:05.8113|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-03-15 00:51:05.8113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_vs/browserLink - - 
+2025-03-15 00:51:05.8113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-15 00:51:05.8113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.js - - 
+2025-03-15 00:51:05.8113|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.js' 
+2025-03-15 00:51:05.8113|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 00:51:05.8259|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.js - - - 200 - application/javascript;charset=utf-8 4.7464ms 
+2025-03-15 00:51:05.8259|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.html - - - 200 - text/html;charset=utf-8 481.8718ms 
+2025-03-15 00:51:05.8422|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 21.1459ms 
+2025-03-15 00:51:05.9233|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 102.1370ms 
+2025-03-15 00:51:06.0020|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - 
+2025-03-15 00:51:06.0020|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-15 00:51:06.0020|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 00:51:06.0020|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.7941ms 
+2025-03-15 00:51:48.0385|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7059/api/User/login application/json 61 
+2025-03-15 00:51:48.0648|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 00:51:48.0648|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 00:51:48.0648|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 00:51:48.0648|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 00:51:48.0648|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 00:51:48.1015|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 00:51:48.1015|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 00:51:48.1015|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 00:51:48.1015|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 00:51:48.1015|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 00:51:48.1015|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 00:51:48.1015|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 00:51:48.3941|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2025-03-15 00:51:48.4457|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 00:51:48.4754|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 00:51:48.4754|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 00:51:48.4754|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 00:51:48.4884|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68H", Request id "0HNB35LE9R68H:0000000B": started reading request body. 
+2025-03-15 00:51:48.4884|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68H", Request id "0HNB35LE9R68H:0000000B": done reading request body. 
+2025-03-15 00:51:48.4884|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 00:51:48.4884|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 00:51:48.4884|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 00:51:48.4884|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 00:51:48.5077|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 00:51:48.5077|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 00:51:48.5077|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 00:51:48.5284|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 00:51:49.6085|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 00:51:49.7863|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<UserEntity>()
+    .FirstOrDefault(e => e.Email == __login_Email_0)' 
+2025-03-15 00:51:50.4105|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.Email (string) Required, 1], [Property: UserEntity.FirstName (string) Required, 2], [Property: UserEntity.LastName (string) Required, 3], [Property: UserEntity.Password (string) Required, 4] }
+        SELECT TOP(1) u.Id, u.Email, u.FirstName, u.LastName, u.Password
+        FROM Users AS u
+        WHERE u.Email == @__login_Email_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-15 00:51:50.4838|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 00:51:50.6020|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (108ms). 
+2025-03-15 00:51:50.6380|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:51:51.4754|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:51:51.5167|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 00:51:51.6897|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (191ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 00:51:51.7832|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 00:51:51.8641|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 00:51:51.8753|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:51:51.9043|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 00:51:51.9043|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 00:51:52.1943|INFO|BusinessLayer.Service.GreetingBL|User successfully logged in: aryan123@gmail.com 
+2025-03-15 00:51:52.1943|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|User logged in successfully: aryan123@gmail.com 
+2025-03-15 00:51:52.1943|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-15 00:51:52.2038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-15 00:51:52.2038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-15 00:51:52.2038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-15 00:51:52.2038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-15 00:51:52.2038|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.LoginResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-15 00:51:52.2278|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GreetingApp.Controllers.UserController.Login (GreetingApp) in 4111.3517ms 
+2025-03-15 00:51:52.2278|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 00:51:52.2404|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-15 00:51:52.2522|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7059/api/User/login application/json 61 - 200 - application/json;+charset=utf-8 4213.6649ms 
+2025-03-15 00:56:56.4775|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68H" received FIN. 
+2025-03-15 00:56:56.4907|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HNB35LE9R68H" is closed. The last processed stream ID was 11. 
+2025-03-15 00:56:56.4907|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68H" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 00:56:56.5486|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68H" stopped. 
+2025-03-15 01:06:37.8898|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68I" received FIN. 
+2025-03-15 01:06:37.8898|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68I" accepted. 
+2025-03-15 01:06:37.8898|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68I" started. 
+2025-03-15 01:06:37.9279|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68J" accepted. 
+2025-03-15 01:06:37.9279|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68J" started. 
+2025-03-15 01:06:37.9279|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 01:06:37.9468|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68I" stopped. 
+2025-03-15 01:06:37.9730|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB35LE9R68I" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 01:06:38.0116|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB35LE9R68J established using the following protocol: Tls13 
+2025-03-15 01:06:38.0367|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/api/User/login
+ application/json 64 
+2025-03-15 01:06:38.0367|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/api/User/login
+' 
+2025-03-15 01:06:38.0367|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 01:06:38.0367|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2025-03-15 01:06:38.0367|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68J" completed keep alive response. 
+2025-03-15 01:06:38.0367|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/api/User/login
+ application/json 64 - 404 0 - 3.3243ms 
+2025-03-15 01:06:38.0367|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000002": started reading request body. 
+2025-03-15 01:06:38.0367|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000002": done reading request body. 
+2025-03-15 01:07:09.0209|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/api/User/login application/json 64 
+2025-03-15 01:07:09.0209|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 01:07:09.0209|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 01:07:09.0209|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:09.0209|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 01:07:09.0209|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:09.0209|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000003": started reading request body. 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000003": done reading request body. 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:07:09.0307|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:09.0307|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 01:07:09.0307|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 01:07:09.0307|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 01:07:09.0955|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 01:07:09.0955|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 01:07:09.0955|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-15 01:07:09.0955|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:09.1110|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:09.1110|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:07:09.1110|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:07:09.1110|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 01:07:09.1110|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 01:07:09.1110|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:09.1110|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:09.1110|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 01:07:09.1267|INFO|BusinessLayer.Service.GreetingBL|User successfully logged in: aryan123@gmail.com 
+2025-03-15 01:07:09.1267|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|User logged in successfully: aryan123@gmail.com 
+2025-03-15 01:07:09.1267|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-15 01:07:09.1267|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-15 01:07:09.1267|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-15 01:07:09.1267|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-15 01:07:09.1267|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-15 01:07:09.1267|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.LoginResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-15 01:07:09.1267|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GreetingApp.Controllers.UserController.Login (GreetingApp) in 97.1733ms 
+2025-03-15 01:07:09.1267|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:09.1267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68J" completed keep alive response. 
+2025-03-15 01:07:09.1267|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-15 01:07:09.1267|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/api/User/login application/json 64 - 200 - application/json;+charset=utf-8 107.4559ms 
+2025-03-15 01:07:45.6037|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/api/User/login application/json 64 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 01:07:45.6037|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:45.6037|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 01:07:45.6037|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000004": started reading request body. 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000004": done reading request body. 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:07:45.6112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:45.6112|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 01:07:45.6112|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 01:07:45.6112|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 01:07:45.6760|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:07:45.6760|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:45.6760|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:45.6760|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 01:07:45.6907|INFO|BusinessLayer.Service.GreetingBL|User successfully logged in: aryan123@gmail.com 
+2025-03-15 01:07:45.6907|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|User logged in successfully: aryan123@gmail.com 
+2025-03-15 01:07:45.6907|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-15 01:07:45.6907|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-15 01:07:45.6907|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-15 01:07:45.6907|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-15 01:07:45.6907|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-15 01:07:45.6907|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.LoginResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-15 01:07:45.6907|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GreetingApp.Controllers.UserController.Login (GreetingApp) in 83.4916ms 
+2025-03-15 01:07:45.6907|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:45.6907|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68J" completed keep alive response. 
+2025-03-15 01:07:45.6907|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-15 01:07:45.6907|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/api/User/login application/json 64 - 200 - application/json;+charset=utf-8 87.4546ms 
+2025-03-15 01:07:47.3038|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/api/User/login application/json 64 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 01:07:47.3038|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:47.3038|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000005": started reading request body. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB35LE9R68J", Request id "0HNB35LE9R68J:00000005": done reading request body. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:07:47.3038|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 01:07:47.3038|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 01:07:47.3038|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 01:07:47.3038|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:07:47.3038|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:47.3038|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:07:47.3038|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 01:07:47.3146|INFO|BusinessLayer.Service.GreetingBL|User successfully logged in: aryan123@gmail.com 
+2025-03-15 01:07:47.3146|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|User logged in successfully: aryan123@gmail.com 
+2025-03-15 01:07:47.3146|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-15 01:07:47.3146|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-15 01:07:47.3146|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-15 01:07:47.3146|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-15 01:07:47.3146|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-15 01:07:47.3146|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Model.LoginResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-15 01:07:47.3146|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GreetingApp.Controllers.UserController.Login (GreetingApp) in 9.9696ms 
+2025-03-15 01:07:47.3146|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:07:47.3146|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB35LE9R68J" completed keep alive response. 
+2025-03-15 01:07:47.3146|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-15 01:07:47.3146|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/api/User/login application/json 64 - 200 - application/json;+charset=utf-8 11.2796ms 
+2025-03-15 01:23:27.1922|INFO|GreetingApp.Program|Application is starting... 
+2025-03-15 01:23:28.4214|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-15 01:23:28.4920|INFO|GreetingApp.Program|Application has started successfully. 
+2025-03-15 01:23:28.4920|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-03-15 01:23:28.5514|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-03-15 01:23:28.5514|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys\key-537e5949-ac3f-441c-b65c-b0c0a6733099.xml'. 
+2025-03-15 01:23:28.5651|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {537e5949-ac3f-441c-b65c-b0c0a6733099}. 
+2025-03-15 01:23:28.5651|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {537e5949-ac3f-441c-b65c-b0c0a6733099} with expiration date 2025-06-12 19:18:10Z as default key. 
+2025-03-15 01:23:28.5796|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 01:23:28.5796|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2025-03-15 01:23:28.5796|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 01:23:28.5796|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2025-03-15 01:23:28.5796|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2025-03-15 01:23:28.5796|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {537e5949-ac3f-441c-b65c-b0c0a6733099} as the default key. 
+2025-03-15 01:23:28.5796|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {537e5949-ac3f-441c-b65c-b0c0a6733099} was loaded during application startup. 
+2025-03-15 01:23:28.9327|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 039D5383BD8FB363D3CEC0BD6FC84A3A81D730B8) 
+2025-03-15 01:23:29.0063|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7059 
+2025-03-15 01:23:29.0063|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5063 
+2025-03-15 01:23:29.0063|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GreetingApp 
+2025-03-15 01:23:29.0063|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-15 01:23:29.0063|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-15 01:23:29.0063|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-15 01:23:29.0726|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-15 01:23:29.0726|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-15 01:23:29.0726|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\newGA\GreetingApp\ 
+2025-03-15 01:23:29.0726|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-03-15 01:23:29.4342|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB367I7MO7T" received FIN. 
+2025-03-15 01:23:29.4342|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB367I7MO7U" received FIN. 
+2025-03-15 01:23:29.4342|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7T" accepted. 
+2025-03-15 01:23:29.4382|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7U" accepted. 
+2025-03-15 01:23:29.4382|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7U" started. 
+2025-03-15 01:23:29.4382|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7T" started. 
+2025-03-15 01:23:29.4757|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 01:23:29.4757|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 01:23:29.5383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7U" stopped. 
+2025-03-15 01:23:29.5383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7T" stopped. 
+2025-03-15 01:23:29.5383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB367I7MO7U" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 01:23:29.5383|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB367I7MO7T" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 01:23:30.3106|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7V" accepted. 
+2025-03-15 01:23:30.3106|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB367I7MO7V" started. 
+2025-03-15 01:23:30.4208|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB367I7MO7V established using the following protocol: Tls13 
+2025-03-15 01:23:30.5057|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.html - - 
+2025-03-15 01:23:30.7142|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-03-15 01:23:30.7440|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-03-15 01:23:30.7440|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 01:23:30.9029|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-03-15 01:23:30.9029|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-03-15 01:23:30.9414|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-03-15 01:23:30.9414|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-03-15 01:23:30.9666|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-15 01:23:30.9666|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.js - - 
+2025-03-15 01:23:30.9666|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_vs/browserLink - - 
+2025-03-15 01:23:30.9666|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.js' 
+2025-03-15 01:23:30.9666|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 01:23:30.9705|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.html - - - 200 - text/html;charset=utf-8 468.8870ms 
+2025-03-15 01:23:30.9705|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.js - - - 200 - application/javascript;charset=utf-8 4.9858ms 
+2025-03-15 01:23:31.0081|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 41.4406ms 
+2025-03-15 01:23:31.1064|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.7538ms 
+2025-03-15 01:23:31.2126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - 
+2025-03-15 01:23:31.2126|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-15 01:23:31.2126|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 01:23:31.2126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.2404ms 
+2025-03-15 01:24:14.6200|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7059/api/User/login application/json 59 
+2025-03-15 01:24:14.6626|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 01:24:14.6626|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 01:24:14.6626|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:24:14.6626|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 01:24:14.6743|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:24:14.7124|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 01:24:14.7124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 01:24:14.7124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 01:24:14.7124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 01:24:14.7124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 01:24:14.7124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 01:24:14.7124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:24:15.0778|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2025-03-15 01:24:15.1251|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:24:15.1529|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:24:15.1529|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 01:24:15.1529|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 01:24:15.1631|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB367I7MO7V", Request id "0HNB367I7MO7V:0000000B": started reading request body. 
+2025-03-15 01:24:15.1631|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB367I7MO7V", Request id "0HNB367I7MO7V:0000000B": done reading request body. 
+2025-03-15 01:24:15.1735|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 01:24:15.1735|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:24:15.1735|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:24:15.1735|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:24:15.1735|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:24:15.1735|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 01:24:15.1735|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 01:24:15.2069|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 01:24:16.2604|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 01:24:16.4316|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<UserEntity>()
+    .FirstOrDefault(e => e.Email == __login_Email_0)' 
+2025-03-15 01:24:16.9567|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.Email (string) Required, 1], [Property: UserEntity.FirstName (string) Required, 2], [Property: UserEntity.LastName (string) Required, 3], [Property: UserEntity.Password (string) Required, 4] }
+        SELECT TOP(1) u.Id, u.Email, u.FirstName, u.LastName, u.Password
+        FROM Users AS u
+        WHERE u.Email == @__login_Email_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-15 01:24:17.0692|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 01:24:17.2034|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (132ms). 
+2025-03-15 01:24:17.2386|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:24:18.2204|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:24:18.2623|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:24:18.4578|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (213ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:24:18.5687|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 01:24:18.6695|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 01:24:18.6793|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:24:18.6973|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:24:18.6973|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 01:24:18.7049|WARN|BusinessLayer.Service.GreetingBL|Login failed - Incorrect password for email: aryan123@gmail.com 
+2025-03-15 01:24:18.7049|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|Invalid login attempt for email: aryan123@gmail.com 
+2025-03-15 01:24:18.7049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-15 01:24:18.7049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-15 01:24:18.7049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-15 01:24:18.7049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-15 01:24:18.7049|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-15 01:24:18.7049|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[ModelLayer.Models.ResponseRegister, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-15 01:24:18.7237|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GreetingApp.Controllers.UserController.Login (GreetingApp) in 4002.8552ms 
+2025-03-15 01:24:18.7237|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:24:18.7237|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-15 01:24:18.7387|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7059/api/User/login application/json 59 - 400 - application/json;+charset=utf-8 4118.6360ms 
+2025-03-15 01:26:21.2267|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7059/api/User/login application/json 61 
+2025-03-15 01:26:21.2370|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 01:26:21.2370|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 01:26:21.2370|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:26:21.2370|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 01:26:21.2370|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:26:21.2370|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 01:26:21.2370|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 01:26:21.2370|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 01:26:21.2749|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 01:26:21.2749|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 01:26:21.2749|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 01:26:21.2749|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:26:21.2749|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB367I7MO7V", Request id "0HNB367I7MO7V:0000000D": started reading request body. 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB367I7MO7V", Request id "0HNB367I7MO7V:0000000D": done reading request body. 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:26:21.2854|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:26:21.2854|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 01:26:21.2854|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 01:26:21.2854|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 01:26:21.3432|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 01:26:21.3605|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 01:26:21.3605|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2025-03-15 01:26:21.3605|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:26:21.3605|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:26:21.3605|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:26:21.3847|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (21ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:26:21.3847|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 01:26:21.3847|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 01:26:21.3847|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:26:21.3847|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:26:21.3847|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 01:26:21.3921|INFO|BusinessLayer.Service.GreetingBL|User successfully logged in: aryan123@gmail.com 
+2025-03-15 01:26:21.6276|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|User logged in successfully: aryan123@gmail.com 
+2025-03-15 01:26:21.6276|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-15 01:26:21.6276|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-15 01:26:21.6276|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-15 01:26:21.6276|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-15 01:26:21.6276|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-15 01:26:21.6276|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[ModelLayer.Model.ResponseModel`1[[ModelLayer.Models.ResponseRegister, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-03-15 01:26:21.6276|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GreetingApp.Controllers.UserController.Login (GreetingApp) in 355.1747ms 
+2025-03-15 01:26:21.6276|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:26:21.6276|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-15 01:26:21.6276|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7059/api/User/login application/json 61 - 200 - application/json;+charset=utf-8 407.4020ms 
+2025-03-15 01:28:47.9202|INFO|GreetingApp.Program|Application is starting... 
+2025-03-15 01:28:48.9136|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-15 01:28:48.9926|INFO|GreetingApp.Program|Application has started successfully. 
+2025-03-15 01:28:49.0023|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-03-15 01:28:49.0647|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-03-15 01:28:49.0647|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\aryan\AppData\Local\ASP.NET\DataProtection-Keys\key-537e5949-ac3f-441c-b65c-b0c0a6733099.xml'. 
+2025-03-15 01:28:49.0647|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {537e5949-ac3f-441c-b65c-b0c0a6733099}. 
+2025-03-15 01:28:49.0893|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {537e5949-ac3f-441c-b65c-b0c0a6733099} with expiration date 2025-06-12 19:18:10Z as default key. 
+2025-03-15 01:28:49.0893|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 01:28:49.0893|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2025-03-15 01:28:49.0974|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-03-15 01:28:49.0974|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2025-03-15 01:28:49.0974|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2025-03-15 01:28:49.0974|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {537e5949-ac3f-441c-b65c-b0c0a6733099} as the default key. 
+2025-03-15 01:28:49.0974|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {537e5949-ac3f-441c-b65c-b0c0a6733099} was loaded during application startup. 
+2025-03-15 01:28:49.4437|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 039D5383BD8FB363D3CEC0BD6FC84A3A81D730B8) 
+2025-03-15 01:28:49.5263|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7059 
+2025-03-15 01:28:49.5263|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5063 
+2025-03-15 01:28:49.5263|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GreetingApp 
+2025-03-15 01:28:49.5263|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-03-15 01:28:49.5263|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-15 01:28:49.5263|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-15 01:28:49.5947|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-15 01:28:49.5947|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-15 01:28:49.5947|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\newGA\GreetingApp\ 
+2025-03-15 01:28:49.5947|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-03-15 01:28:49.7975|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB36AHMUI5H" received FIN. 
+2025-03-15 01:28:49.7975|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB36AHMUI5G" received FIN. 
+2025-03-15 01:28:49.8206|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5H" accepted. 
+2025-03-15 01:28:49.8206|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5G" accepted. 
+2025-03-15 01:28:49.8206|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5G" started. 
+2025-03-15 01:28:49.8206|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5H" started. 
+2025-03-15 01:28:49.8698|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 01:28:49.8698|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 01:28:49.9129|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5H" stopped. 
+2025-03-15 01:28:49.9129|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5G" stopped. 
+2025-03-15 01:28:49.9264|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB36AHMUI5H" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 01:28:49.9264|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB36AHMUI5G" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 01:28:50.7686|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5I" accepted. 
+2025-03-15 01:28:50.7686|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5I" started. 
+2025-03-15 01:28:50.8213|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB36AHMUI5I established using the following protocol: Tls13 
+2025-03-15 01:28:50.9347|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.html - - 
+2025-03-15 01:28:51.1420|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-03-15 01:28:51.1718|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-03-15 01:28:51.1718|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 01:28:51.3263|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-03-15 01:28:51.3263|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-03-15 01:28:51.3604|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-03-15 01:28:51.3631|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-03-15 01:28:51.3771|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-15 01:28:51.3771|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/index.js - - 
+2025-03-15 01:28:51.3771|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/_vs/browserLink - - 
+2025-03-15 01:28:51.3955|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.js' 
+2025-03-15 01:28:51.3955|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 01:28:51.3955|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.html - - - 200 - text/html;charset=utf-8 459.1073ms 
+2025-03-15 01:28:51.3955|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/index.js - - - 200 - application/javascript;charset=utf-8 14.5254ms 
+2025-03-15 01:28:51.4127|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 36.1900ms 
+2025-03-15 01:28:51.5000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.8579ms 
+2025-03-15 01:28:51.5770|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - 
+2025-03-15 01:28:51.5770|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-15 01:28:51.5770|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-03-15 01:28:51.5852|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7059/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.1326ms 
+2025-03-15 01:29:04.7126|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5J" accepted. 
+2025-03-15 01:29:04.7126|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5J" started. 
+2025-03-15 01:29:04.7126|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5K" accepted. 
+2025-03-15 01:29:04.7126|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5K" started. 
+2025-03-15 01:29:04.7126|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB36AHMUI5J" received FIN. 
+2025-03-15 01:29:04.7380|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HNB36AHMUI5K established using the following protocol: Tls13 
+2025-03-15 01:29:04.7380|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-15 01:29:04.7380|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5J" stopped. 
+2025-03-15 01:29:04.7380|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNB36AHMUI5J" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-15 01:29:04.7572|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7059/api/User/login application/json 65 
+2025-03-15 01:29:04.7572|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/login' 
+2025-03-15 01:29:04.7732|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' with route pattern 'api/User/login' is valid for the request path '/api/User/login' 
+2025-03-15 01:29:04.7732|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:29:04.7732|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-03-15 01:29:04.7732|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:29:04.8298|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ModelLayer.DTOs.LoginDTO) on controller GreetingApp.Controllers.UserController (GreetingApp). 
+2025-03-15 01:29:04.8298|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-03-15 01:29:04.8298|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-03-15 01:29:04.8298|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-15 01:29:04.8298|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-03-15 01:29:04.8298|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-15 01:29:04.8298|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:29:05.2417|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2025-03-15 01:29:05.3119|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GreetingApp.Controllers.UserController (GreetingApp) 
+2025-03-15 01:29:05.3421|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:29:05.3473|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' using the name '' in request data ... 
+2025-03-15 01:29:05.3473|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-15 01:29:05.3473|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB36AHMUI5K", Request id "0HNB36AHMUI5K:00000002": started reading request body. 
+2025-03-15 01:29:05.3614|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HNB36AHMUI5K", Request id "0HNB36AHMUI5K:00000002": done reading request body. 
+2025-03-15 01:29:05.3614|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ModelLayer.DTOs.LoginDTO' 
+2025-03-15 01:29:05.3614|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:29:05.3614|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:29:05.3614|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO' ... 
+2025-03-15 01:29:05.3917|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'login' of type 'ModelLayer.DTOs.LoginDTO'. 
+2025-03-15 01:29:05.3917|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Login attempt for email: aryan123@gmail.com 
+2025-03-15 01:29:05.3917|INFO|BusinessLayer.Service.GreetingBL|Login process started for email: aryan123@gmail.com 
+2025-03-15 01:29:05.4171|INFO|RepositoryLayer.Service.GreetingRL|Login request received for email: aryan123@gmail.com 
+2025-03-15 01:29:07.2182|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.36 initialized 'UserContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-15 01:29:07.4982|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<UserEntity>()
+    .FirstOrDefault(e => e.Email == __login_Email_0)' 
+2025-03-15 01:29:08.8389|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserEntity.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserEntity.Email (string) Required, 1], [Property: UserEntity.FirstName (string) Required, 2], [Property: UserEntity.LastName (string) Required, 3], [Property: UserEntity.Password (string) Required, 4] }
+        SELECT TOP(1) u.Id, u.Email, u.FirstName, u.LastName, u.Password
+        FROM Users AS u
+        WHERE u.Email == @__login_Email_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.UserContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' 
+2025-03-15 01:29:09.0205|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2025-03-15 01:29:09.1642|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (135ms). 
+2025-03-15 01:29:09.2087|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:29:10.1984|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:29:10.2485|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:29:10.4830|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (247ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0 
+2025-03-15 01:29:10.6082|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'UserContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2025-03-15 01:29:10.7221|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2025-03-15 01:29:10.7221|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:29:10.7664|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'Greetings' on server 'DESKTOP-11S3PTK\SQLEXPRESS'. 
+2025-03-15 01:29:10.7664|INFO|RepositoryLayer.Service.GreetingRL|User found with email: aryan123@gmail.com 
+2025-03-15 01:29:10.7779|WARN|BusinessLayer.Service.GreetingBL|Login failed - Incorrect password for email: aryan123@gmail.com 
+2025-03-15 01:29:10.7779|WARN|HelloGreetingApplication.Controllers.HelloGreetingController|Invalid login attempt for email: aryan123@gmail.com 
+2025-03-15 01:29:10.7890|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-15 01:29:10.7890|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-03-15 01:29:10.7890|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-15 01:29:10.7890|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-15 01:29:10.7994|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-15 01:29:10.7994|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-15 01:29:10.8304|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GreetingApp.Controllers.UserController.Login (GreetingApp) in 5984.4718ms 
+2025-03-15 01:29:10.8304|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GreetingApp.Controllers.UserController.Login (GreetingApp)' 
+2025-03-15 01:29:10.8304|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNB36AHMUI5K" completed keep alive response. 
+2025-03-15 01:29:10.8304|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'UserContext' disposed. 
+2025-03-15 01:29:10.8551|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7059/api/User/login application/json 65 - 401 - application/json;+charset=utf-8 6097.8414ms 

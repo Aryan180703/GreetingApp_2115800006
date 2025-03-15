@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interface;
+using BusinessLayer.Services;
 using BusinessLayer.Utils;
 using Microsoft.Extensions.Logging;
 using ModelLayer.DTOs;
@@ -16,6 +17,7 @@ namespace BusinessLayer.Service
     public class GreetingBL : IGreetingBL
     {
         private readonly IGreetingRL _greetingRL;
+        private readonly TokenService _tokenService;
         private readonly ILogger<GreetingBL> _logger;
 
         /// <summary>
@@ -23,9 +25,10 @@ namespace BusinessLayer.Service
         /// </summary>
         /// <param name="greetingRL">Repository layer interface for greeting operations.</param>
         /// <param name="logger">Logger instance for logging operations.</param>
-        public GreetingBL(IGreetingRL greetingRL, ILogger<GreetingBL> logger)
+        public GreetingBL(IGreetingRL greetingRL, TokenService tokenService, ILogger<GreetingBL> logger)
         {
             _greetingRL = greetingRL;
+            _tokenService = tokenService;
             _logger = logger;
         }
 
@@ -311,7 +314,6 @@ namespace BusinessLayer.Service
         {
             _logger.LogInformation("Login process started for email: {Email}", login.Email);
 
-            //login.Password = PasswordHasherService.HashPassword(login.Password);
             UserEntity response = _greetingRL.LoginRL(login);
 
             if (response != null)
@@ -319,6 +321,9 @@ namespace BusinessLayer.Service
                 bool PasswordCheck = PasswordHasherService.VerifyPassword(login.Password, response.Password);
                 if (PasswordCheck)
                 {
+                    // ✅ Generate JWT Token
+                    //string token = _tokenService.GenerateToken(response);
+
                     _logger.LogInformation("User successfully logged in: {Email}", login.Email);
                     return new ResponseModel<ResponseRegister>
                     {
@@ -330,6 +335,7 @@ namespace BusinessLayer.Service
                             Email = response.Email,
                             FirstName = response.FirstName,
                             LastName = response.LastName,
+                            //Token = token // ✅ Add Token in Response
                         }
                     };
                 }
@@ -347,10 +353,9 @@ namespace BusinessLayer.Service
             return new ResponseModel<ResponseRegister>
             {
                 Success = false,
-                Message = "No user registed with this Email",
+                Message = "No user registered with this Email",
                 Data = null
             };
-            
         }
 
 

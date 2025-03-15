@@ -9,3 +9,14 @@ C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.
 C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
 C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
 C:\Holi Projects\GreetingApp\GreetingApp\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll
+C:\newGA\ModelLayer\bin\Debug\net6.0\ModelLayer.deps.json
+C:\newGA\ModelLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\newGA\ModelLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\newGA\ModelLayer\obj\Debug\net6.0\ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\newGA\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfoInputs.cache
+C:\newGA\ModelLayer\obj\Debug\net6.0\ModelLayer.AssemblyInfo.cs
+C:\newGA\ModelLayer\obj\Debug\net6.0\ModelLayer.csproj.CoreCompileInputs.cache
+C:\newGA\ModelLayer\obj\Debug\net6.0\ModelLayer.dll
+C:\newGA\ModelLayer\obj\Debug\net6.0\refint\ModelLayer.dll
+C:\newGA\ModelLayer\obj\Debug\net6.0\ModelLayer.pdb
+C:\newGA\ModelLayer\obj\Debug\net6.0\ref\ModelLayer.dll
