@@ -21,5 +21,8 @@ namespace BusinessLayer.Interface
         public ResponseModel<ResponseAllMessage> DeleteGreeting(int id);
         public ResponseModel<ResponseRegister> RegisterBL(UserModel user);
         public ResponseModel<ResponseRegister> LoginBL(LoginDTO login);
+        public ResponseModel<string> ForgotPasswordBL(string email);
+        public ResponseModel<string> ResetPasswordBL(string token, string newPassword);
+
     }
 }

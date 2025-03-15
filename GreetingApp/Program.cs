@@ -11,6 +11,8 @@ using NLog.Web;
 using GreetingApp.Middleware;
 using System.Text;
 using BusinessLayer.Services;
+using Email.Service;
+using Email.Interface;
 
 var logger = LogManager.Setup().LoadConfigurationFromFile("Nlog.config").GetCurrentClassLogger();
 logger.Info("Application is starting...");
@@ -43,7 +45,8 @@ try
     // Add services to the container.
     builder.Services.AddScoped<IGreetingBL, GreetingBL>();
     builder.Services.AddScoped<IGreetingRL, GreetingRL>();
-    builder.Services.AddScoped<TokenService>();
+    builder.Services.AddScoped<IEmailService, EmailService>();
+    builder.Services.AddScoped<ITokenService,TokenService>();
 
     builder.Services.AddControllers();
     builder.Services.AddDbContext<UserContext>(options =>
@@ -63,7 +66,7 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-
+    app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers();
 

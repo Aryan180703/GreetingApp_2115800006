@@ -19,7 +19,7 @@ namespace GreetingApp.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly TokenService _tokenService;
+        private readonly ITokenService _tokenService;
         private readonly IGreetingBL _greetingBL;
         private readonly ILogger<HelloGreetingController> _logger;
 
@@ -28,7 +28,7 @@ namespace GreetingApp.Controllers
         /// </summary>
         /// <param name="greetingBL">The business logic layer interface for user operations.</param>
         /// <param name="logger">The logger for logging important events and errors.</param>
-        public UserController(IGreetingBL greetingBL,TokenService tokenService, ILogger<HelloGreetingController> logger)
+        public UserController(IGreetingBL greetingBL,ITokenService tokenService, ILogger<HelloGreetingController> logger)
         {
             _tokenService = tokenService;
             _greetingBL = greetingBL;
@@ -85,6 +85,45 @@ namespace GreetingApp.Controllers
 
             _logger.LogWarning("Invalid login attempt for email: {Email}", login.Email);
             return Unauthorized( new {Message = "Invalid Credentials "});
+        }
+
+
+        /// <summary>
+        /// Sends a password reset link to the user's email if it exists in the system.
+        /// </summary>
+        /// <param name="email">User's email address</param>
+        /// <returns>Response indicating whether the reset link was sent</returns>
+        [HttpPost("forgot-password")]
+        public IActionResult ForgotPassword([FromBody] ForgotPasswordDTO request)
+        {
+            _logger.LogInformation("ForgotPassword API called for email: {Email}", request.Email);
+
+            var response = _greetingBL.ForgotPasswordBL(request.Email);
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
+        }
+
+        /// <summary>
+        /// Resets the user's password using the token sent via email.
+        /// </summary>
+        /// <param name="request">Token and new password</param>
+        /// <returns>Response indicating whether the password was updated</returns>
+        [HttpPost("reset-password")]
+        public IActionResult ResetPassword([FromBody] ResetPasswordDTO request)
+        {
+            _logger.LogInformation("ResetPassword API called with token: {Token}", request.Token);
+
+            var response = _greetingBL.ResetPasswordBL(request.Token, request.NewPassword);
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
     }

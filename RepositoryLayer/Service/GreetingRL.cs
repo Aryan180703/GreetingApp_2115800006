@@ -238,5 +238,52 @@ namespace RepositoryLayer.Service
             return null;
         }
 
+        /// <summary>
+        /// Retrieves user by email for the Forgot Password feature.
+        /// </summary>
+        /// <param name="email">User's email to retrieve information.</param>
+        /// <returns>UserEntity object if found; otherwise, null.</returns>
+        public UserEntity GetUserByEmailRL(string email)
+        {
+            _logger.LogInformation("GetUserByEmailRL method called for email: {Email}", email);
+
+            var user = _Context.Users.FirstOrDefault(u => u.Email == email);
+
+            if (user == null)
+            {
+                _logger.LogWarning("No user found with email: {Email}", email);
+                return null;
+            }
+
+            _logger.LogInformation("User found with email: {Email}", email);
+            return user;
+        }
+
+        /// <summary>
+        /// Updates the password for the user if a valid JWT reset token is provided.
+        /// </summary>
+        /// <param name="email">User's email.</param>
+        /// <param name="newPassword">New password to be updated.</param>
+        /// <returns>True if password updated successfully; otherwise, false.</returns>
+        public bool UpdatePasswordRL(string email, string newPassword)
+        {
+            _logger.LogInformation("UpdatePasswordRL method called for email: {Email}", email);
+
+            var user = _Context.Users.FirstOrDefault(u => u.Email == email);
+
+            if (user == null)
+            {
+                _logger.LogWarning("No user found with email: {Email}", email);
+                return false;
+            }
+
+            user.Password = newPassword; // Later, you should hash this password
+            _Context.SaveChanges();
+
+            _logger.LogInformation("Password updated successfully for email: {Email}", email);
+            return true;
+        }
+
+
     }
 }

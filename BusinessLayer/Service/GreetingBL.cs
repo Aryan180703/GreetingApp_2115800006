@@ -1,6 +1,8 @@
-﻿using BusinessLayer.Interface;
+﻿using System.Security.Claims;
+using BusinessLayer.Interface;
 using BusinessLayer.Services;
 using BusinessLayer.Utils;
+using Email.Interface;
 using Microsoft.Extensions.Logging;
 using ModelLayer.DTOs;
 using ModelLayer.Model;
@@ -17,16 +19,18 @@ namespace BusinessLayer.Service
     public class GreetingBL : IGreetingBL
     {
         private readonly IGreetingRL _greetingRL;
-        private readonly TokenService _tokenService;
+        private readonly ITokenService _tokenService;
         private readonly ILogger<GreetingBL> _logger;
+        private readonly IEmailService _emailService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GreetingBL"/> class.
         /// </summary>
         /// <param name="greetingRL">Repository layer interface for greeting operations.</param>
         /// <param name="logger">Logger instance for logging operations.</param>
-        public GreetingBL(IGreetingRL greetingRL, TokenService tokenService, ILogger<GreetingBL> logger)
+        public GreetingBL(IGreetingRL greetingRL, ITokenService tokenService, ILogger<GreetingBL> logger, IEmailService emailService)
         {
+            _emailService = emailService;
             _greetingRL = greetingRL;
             _tokenService = tokenService;
             _logger = logger;
@@ -357,6 +361,101 @@ namespace BusinessLayer.Service
                 Data = null
             };
         }
+
+
+
+        public ResponseModel<string> ForgotPasswordBL(string email)
+        {
+            _logger.LogInformation("ForgotPasswordBL method called for email: {Email}", email);
+
+            var user = _greetingRL.GetUserByEmailRL(email);
+            if (user == null)
+            {
+                _logger.LogWarning("No user found with email: {Email}", email);
+                return new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "User not found",
+                    Data = null
+                };
+            }
+
+            // Generate JWT token for password reset
+            string resetToken = _tokenService.GenerateToken(user.Id, user.Email);
+
+            // Email content
+            string subject = "Password Reset Request";
+            string message = $"Click the link to reset your password: https://yourapp.com/reset-password?token={resetToken}";
+
+            // Send email
+            _emailService.SendEmail(email, subject, message);
+
+            _logger.LogInformation("Password reset email sent to {Email}", email);
+
+            return new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Password reset link sent to email",
+                Data = resetToken // Optional: Can be removed for security reasons
+            };
+        }
+
+
+        public ResponseModel<string> ResetPasswordBL(string token, string newPassword)
+        {
+            _logger.LogInformation("ResetPasswordBL method called with token: {Token}", token);
+
+            var tokenData = _tokenService.ValidateToken(token);
+            if (tokenData == null)
+            {
+                _logger.LogWarning("Invalid or expired token: {Token}", token);
+                return new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Invalid or expired token",
+                    Data = null
+                };
+            }
+            newPassword = PasswordHasherService.HashPassword(newPassword);
+            // Extract email from token
+            var emailClaim = tokenData.FindFirst(ClaimTypes.Email) ?? tokenData.FindFirst("Email");
+            if (emailClaim == null)
+            {
+                _logger.LogWarning("Email claim not found in token");
+                return new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Invalid token structure",
+                    Data = null
+                };
+            }
+            string email = emailClaim.Value; // Now you have the email
+
+            // Update password
+            bool isUpdated = _greetingRL.UpdatePasswordRL(email, newPassword);
+            if (!isUpdated)
+            {
+                _logger.LogError("Failed to update password for email: {Email}", email);
+                return new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Failed to update password",
+                    Data = null
+                };
+            }
+
+            _logger.LogInformation("Password updated successfully for email: {Email}", email);
+
+            return new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Password updated successfully",
+                Data = null
+            };
+        }
+
+
+
 
 
     }
