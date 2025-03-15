@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ModelLayer.Model
+namespace ModelLayer.DTOs
 {
-    public class ResponseAllMessage
+    public class GetByIDDTO
     {
         public int Id { get; set; }
-        public string Message { get; set; }
+        public int UserId { get; set; }
     }
 }

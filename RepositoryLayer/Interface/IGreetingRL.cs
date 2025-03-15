@@ -12,14 +12,15 @@ namespace RepositoryLayer.Interface
 {
     public interface IGreetingRL
     {
-        public GreetingEntity AddGreeting(RequestGreetingModel requestGreetingModel, string Message);
-        public string GetGreetingByIdRL(int id);
-        public List<ResponseAllMessage> GetAllGreetingMessageRL();
+        public GreetingEntity AddGreeting(AddGreetingRequestModel addGreetingRequestModel);
+        public string GetGreetingByIdRL(int Id , int UserId);
+        public List<ResponseAllMessage> GetAllGreetingMessageRL(int UserId);
         public ResponseAllMessage UpdateGreetingMessageRL(RequestUpdateModel requestUpdateModel);
-        public ResponseAllMessage DeleteGreetingMessageRL(int id);
+        public DeletedMessageDTO DeleteGreetingMessageRL(DeleteGreetingDTO delete);
         public ResponseRegister RegisterRL(UserModel userModel);
         public UserEntity LoginRL(LoginDTO login);
         public UserEntity GetUserByEmailRL(string email);
         public bool UpdatePasswordRL(string email, string newPassword);
+        public bool UserExistOrNot(int UserId);
     }
 }

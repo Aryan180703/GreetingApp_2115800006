@@ -16,14 +16,12 @@ namespace RepositoryLayer.Context
         public DbSet<UserEntity> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Make FirstName and LastName optional in the database
+            // Define Relationship: One User → Many Greetings
             modelBuilder.Entity<GreetingEntity>()
-                .Property(g => g.FirstName)
-                .IsRequired(false);
-
-            modelBuilder.Entity<GreetingEntity>()
-                .Property(g => g.LastName)
-                .IsRequired(false);
+                .HasOne(g => g.User)      // One Greeting has One User
+                .WithMany(u => u.Greetings) // One User has Many Greetings
+                .HasForeignKey(g => g.UserId) // FK: GreetingEntity.UserId
+                .OnDelete(DeleteBehavior.Cascade); // Cascade delete (delete greetings if user is deleted)
         }
     }
 }

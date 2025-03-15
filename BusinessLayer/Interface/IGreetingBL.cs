@@ -13,12 +13,12 @@ namespace BusinessLayer.Interface
     public interface IGreetingBL
     {
         public string GetGreetingMessage();
-        public ResponseModel<GreetingEntity> GenerateGreetingMessage(RequestGreetingModel requestGreetingModel);
+        public ResponseModel<GreetingEntity> AddGreetingBL(AddGreetingRequestModel requestGreetingModel);
         public ResponseModel<string> GenerateGreeting(string firstName, string lastName);
-        public ResponseModel<string> GetGreetingById(int id);
-        public ResponseModel<List<ResponseAllMessage>> GetAllGreetingMessage();
+        public ResponseModel<string> GetGreetingById(int Id , int UserId);
+        public ResponseModel<List<ResponseAllMessage>> GetAllGreetingMessage(int UserId);
         public ResponseModel<ResponseAllMessage> UpdateGreetingMessage(RequestUpdateModel requestUpdateModel);
-        public ResponseModel<ResponseAllMessage> DeleteGreeting(int id);
+        public ResponseModel<DeletedMessageDTO> DeleteGreeting(DeleteGreetingDTO delete);
         public ResponseModel<ResponseRegister> RegisterBL(UserModel user);
         public ResponseModel<ResponseRegister> LoginBL(LoginDTO login);
         public ResponseModel<string> ForgotPasswordBL(string email);
