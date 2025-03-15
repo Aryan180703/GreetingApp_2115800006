@@ -15,3 +15,20 @@ C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\Reposi
 C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll
 C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.runtimeconfig.json
 C:\Holi Projects\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.genruntimeconfig.cache
+C:\newGA\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.deps.json
+C:\newGA\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.runtimeconfig.json
+C:\newGA\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.dll
+C:\newGA\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\newGA\RepositoryLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\newGA\RepositoryLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfoInputs.cache
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfo.cs
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\Reposito.A0A61804.Up2Date
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.dll
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\refint\RepositoryLayer.dll
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.pdb
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.genruntimeconfig.cache
+C:\newGA\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll

@@ -15,3 +15,20 @@ C:\Holi Projects\GreetingApp\GreetingApp\BusinessLayer\obj\Debug\net6.0\Business
 C:\Holi Projects\GreetingApp\GreetingApp\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
 C:\Holi Projects\GreetingApp\GreetingApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
 C:\Holi Projects\GreetingApp\GreetingApp\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
+C:\newGA\BusinessLayer\bin\Debug\net6.0\BusinessLayer.deps.json
+C:\newGA\BusinessLayer\bin\Debug\net6.0\BusinessLayer.dll
+C:\newGA\BusinessLayer\bin\Debug\net6.0\BusinessLayer.pdb
+C:\newGA\BusinessLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\newGA\BusinessLayer\bin\Debug\net6.0\RepositoryLayer.dll
+C:\newGA\BusinessLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\newGA\BusinessLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\newGA\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\newGA\BusinessLayer\obj\Debug\net6.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\newGA\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\newGA\BusinessLayer\obj\Debug\net6.0\BusinessLayer.AssemblyInfo.cs
+C:\newGA\BusinessLayer\obj\Debug\net6.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\newGA\BusinessLayer\obj\Debug\net6.0\Business.EA331CBA.Up2Date
+C:\newGA\BusinessLayer\obj\Debug\net6.0\BusinessLayer.dll
+C:\newGA\BusinessLayer\obj\Debug\net6.0\refint\BusinessLayer.dll
+C:\newGA\BusinessLayer\obj\Debug\net6.0\BusinessLayer.pdb
+C:\newGA\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll

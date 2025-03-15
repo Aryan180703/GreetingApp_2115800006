@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using HelloGreetingApplication.Controllers;
 using ModelLayer.Models;
 using ModelLayer.DTOs;
+using BusinessLayer.Services;
 
 namespace GreetingApp.Controllers
 {
@@ -18,6 +19,7 @@ namespace GreetingApp.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly TokenService _tokenService;
         private readonly IGreetingBL _greetingBL;
         private readonly ILogger<HelloGreetingController> _logger;
 
@@ -26,8 +28,9 @@ namespace GreetingApp.Controllers
         /// </summary>
         /// <param name="greetingBL">The business logic layer interface for user operations.</param>
         /// <param name="logger">The logger for logging important events and errors.</param>
-        public UserController(IGreetingBL greetingBL, ILogger<HelloGreetingController> logger)
+        public UserController(IGreetingBL greetingBL,TokenService tokenService, ILogger<HelloGreetingController> logger)
         {
+            _tokenService = tokenService;
             _greetingBL = greetingBL;
             _logger = logger;
         }
@@ -75,12 +78,13 @@ namespace GreetingApp.Controllers
 
             if (response.Success)
             {
+                string token = _tokenService.GenerateToken(response.Data.Email);
                 _logger.LogInformation("User logged in successfully: {Email}", login.Email);
-                return Ok(response);
+                return Ok( new { Token = token, response });
             }
 
             _logger.LogWarning("Invalid login attempt for email: {Email}", login.Email);
-            return BadRequest(response);
+            return Unauthorized( new {Message = "Invalid Credentials "});
         }
 
     }
