@@ -12,8 +12,7 @@ using BusinessLayer.Services;
 namespace GreetingApp.Controllers
 {
     /// <summary>
-    /// Controller for user-related operations such as registration, login, password management, etc.
-    /// Handles HTTP requests for user management in the Greeting App.
+    /// Manages user-related operations including registration, login, and password management.
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -21,14 +20,15 @@ namespace GreetingApp.Controllers
     {
         private readonly ITokenService _tokenService;
         private readonly IGreetingBL _greetingBL;
-        private readonly ILogger<HelloGreetingController> _logger;
+        private readonly ILogger<UserController> _logger; // Adjusted to UserController (assuming typo in original)
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UserController"/> class.
         /// </summary>
-        /// <param name="greetingBL">The business logic layer interface for user operations.</param>
-        /// <param name="logger">The logger for logging important events and errors.</param>
-        public UserController(IGreetingBL greetingBL,ITokenService tokenService, ILogger<HelloGreetingController> logger)
+        /// <param name="greetingBL">Business logic layer interface for user operations.</param>
+        /// <param name="tokenService">Service for generating authentication tokens.</param>
+        /// <param name="logger">Logger for tracking user-related events and errors.</param>
+        public UserController(IGreetingBL greetingBL, ITokenService tokenService, ILogger<UserController> logger)
         {
             _tokenService = tokenService;
             _greetingBL = greetingBL;
@@ -36,95 +36,100 @@ namespace GreetingApp.Controllers
         }
 
         /// <summary>
-        /// Registers a new user in the system.
+        /// Registers a new user in the system with the provided details.
         /// </summary>
-        /// <param name="userModel">The user details required for registration.</param>
+        /// <param name="userModel">The user details required for registration (e.g., email, password).</param>
         /// <returns>
-        /// Returns HTTP 200 (OK) if registration is successful.  
-        /// Returns HTTP 409 (Conflict) if the user already exists.
+        /// - 200 OK with registration details if successful.
+        /// - 409 Conflict if the email is already registered.
         /// </returns>
         [HttpPost]
         public IActionResult Register(UserModel userModel)
         {
-            _logger.LogInformation("Received registration request for email: {Email}", userModel.Email);
-
+            _logger.LogInformation("Processing registration request for email: {Email}", userModel.Email);
             ResponseModel<ResponseRegister> response = _greetingBL.RegisterBL(userModel);
 
             if (response.Success)
             {
-                _logger.LogInformation("User registration successful for email: {Email}", userModel.Email);
+                _logger.LogInformation("User registered successfully for email: {Email}", userModel.Email);
                 return Ok(response);
             }
 
-            _logger.LogWarning("User registration failed. Email {Email} is already registered.", userModel.Email);
+            _logger.LogWarning("Registration failed. Email already in use: {Email}", userModel.Email);
             return Conflict(response);
         }
 
-
         /// <summary>
-        /// Handles user login by validating credentials.
+        /// Authenticates a user and generates a token upon successful login.
         /// </summary>
         /// <param name="login">The login details containing email and password.</param>
         /// <returns>
-        /// Returns a 200 OK response if login is successful.
-        /// Returns a 400 Bad Request if credentials are incorrect.
+        /// - 200 OK with a token and response data if login succeeds.
+        /// - 401 Unauthorized if credentials are invalid.
         /// </returns>
         [HttpPost("login")]
         public IActionResult Login(LoginDTO login)
         {
-            _logger.LogInformation("Login attempt for email: {Email}", login.Email);
-
+            _logger.LogInformation("Processing login attempt for email: {Email}", login.Email);
             ResponseModel<ResponseRegister> response = _greetingBL.LoginBL(login);
 
             if (response.Success)
             {
                 string token = _tokenService.GenerateToken(response.Data.Email);
-                _logger.LogInformation("User logged in successfully: {Email}", login.Email);
-                return Ok( new { Token = token, response });
+                _logger.LogInformation("Login successful for email: {Email}. Token generated.", login.Email);
+                return Ok(new { Token = token, response });
             }
 
-            _logger.LogWarning("Invalid login attempt for email: {Email}", login.Email);
-            return Unauthorized( new {Message = "Invalid Credentials "});
+            _logger.LogWarning("Login failed due to invalid credentials for email: {Email}", login.Email);
+            return Unauthorized(new { Message = "Invalid Credentials" });
         }
 
-
         /// <summary>
-        /// Sends a password reset link to the user's email if it exists in the system.
+        /// Initiates a password reset by sending a reset link to the user's email.
         /// </summary>
-        /// <param name="email">User's email address</param>
-        /// <returns>Response indicating whether the reset link was sent</returns>
+        /// <param name="request">DTO containing the user's email address.</param>
+        /// <returns>
+        /// - 200 OK if the reset link is sent successfully.
+        /// - 400 Bad Request if the email is not found or invalid.
+        /// </returns>
         [HttpPost("forgot-password")]
         public IActionResult ForgotPassword([FromBody] ForgotPasswordDTO request)
         {
-            _logger.LogInformation("ForgotPassword API called for email: {Email}", request.Email);
-
+            _logger.LogInformation("Processing forgot password request for email: {Email}", request.Email);
             var response = _greetingBL.ForgotPasswordBL(request.Email);
-            if (!response.Success)
+
+            if (response.Success)
             {
-                return BadRequest(response);
+                _logger.LogInformation("Password reset link sent successfully to email: {Email}", request.Email);
+                return Ok(response);
             }
 
-            return Ok(response);
+            _logger.LogWarning("Failed to send reset link. Email not found: {Email}", request.Email);
+            return BadRequest(response);
         }
 
         /// <summary>
-        /// Resets the user's password using the token sent via email.
+        /// Resets the user's password using a provided token and new password.
         /// </summary>
-        /// <param name="request">Token and new password</param>
-        /// <returns>Response indicating whether the password was updated</returns>
+        /// <param name="request">DTO containing the reset token and new password.</param>
+        /// <returns>
+        /// - 200 OK if the password is reset successfully.
+        /// - 400 Bad Request if the token is invalid or expired.
+        /// </returns>
         [HttpPost("reset-password")]
         public IActionResult ResetPassword([FromBody] ResetPasswordDTO request)
         {
-            _logger.LogInformation("ResetPassword API called with token: {Token}", request.Token);
-
+            _logger.LogInformation("Processing password reset request with token: {Token}", request.Token);
             var response = _greetingBL.ResetPasswordBL(request.Token, request.NewPassword);
-            if (!response.Success)
+
+            if (response.Success)
             {
-                return BadRequest(response);
+                _logger.LogInformation("Password reset successful for token: {Token}", request.Token);
+                return Ok(response);
             }
 
-            return Ok(response);
+            _logger.LogWarning("Password reset failed. Invalid or expired token: {Token}", request.Token);
+            return BadRequest(response);
         }
-
     }
 }

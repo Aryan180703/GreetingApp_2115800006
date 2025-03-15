@@ -65,41 +65,15 @@
   },
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Get",
-    "RelativePath": "HelloGreeting",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
     "Method": "Post",
-    "RelativePath": "HelloGreeting",
+    "RelativePath": "HelloGreeting/AddGreetingMessage",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "requestGreetingModel",
-        "Type": "ModelLayer.Model.RequestGreetingModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Put",
-    "RelativePath": "HelloGreeting",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "requestUpdateModel",
-        "Type": "ModelLayer.Model.RequestUpdateModel",
+        "Type": "ModelLayer.Model.AddGreetingRequestModel",
         "IsRequired": true
       }
     ],
@@ -108,14 +82,14 @@
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
     "Method": "Delete",
-    "RelativePath": "HelloGreeting/DeleteGreetingMessage/{Id}",
+    "RelativePath": "HelloGreeting/DeleteGreetingMessage",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
+        "Name": "delete",
+        "Type": "ModelLayer.DTOs.DeleteGreetingDTO",
         "IsRequired": true
       }
     ],
@@ -145,7 +119,23 @@
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
     "Method": "GetAll",
-    "RelativePath": "HelloGreeting/GetAllGreetingMessage",
+    "RelativePath": "HelloGreeting/GetAllGreetingMessage/{UserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "Get",
+    "RelativePath": "HelloGreeting/GetDefaultMessage",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -155,14 +145,35 @@
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
     "Method": "Get",
-    "RelativePath": "HelloGreeting/GetGreetingByID/{Id}",
+    "RelativePath": "HelloGreeting/GetGreetingByID/{MessageId}/{UserId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "MessageId",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "Put",
+    "RelativePath": "HelloGreeting/UpdateGreetingMessage",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestUpdateModel",
+        "Type": "ModelLayer.Model.RequestUpdateModel",
         "IsRequired": true
       }
     ],
