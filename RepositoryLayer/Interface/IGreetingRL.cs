@@ -19,5 +19,7 @@ namespace RepositoryLayer.Interface
         public ResponseAllMessage DeleteGreetingMessageRL(int id);
         public ResponseRegister RegisterRL(UserModel userModel);
         public UserEntity LoginRL(LoginDTO login);
+        public UserEntity GetUserByEmailRL(string email);
+        public bool UpdatePasswordRL(string email, string newPassword);
     }
 }

@@ -1,0 +1,12 @@
+C:\newGA\Email\bin\Debug\net6.0\Email.deps.json
+C:\newGA\Email\bin\Debug\net6.0\Email.dll
+C:\newGA\Email\bin\Debug\net6.0\Email.pdb
+C:\newGA\Email\obj\Debug\net6.0\Email.csproj.AssemblyReference.cache
+C:\newGA\Email\obj\Debug\net6.0\Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\newGA\Email\obj\Debug\net6.0\Email.AssemblyInfoInputs.cache
+C:\newGA\Email\obj\Debug\net6.0\Email.AssemblyInfo.cs
+C:\newGA\Email\obj\Debug\net6.0\Email.csproj.CoreCompileInputs.cache
+C:\newGA\Email\obj\Debug\net6.0\Email.dll
+C:\newGA\Email\obj\Debug\net6.0\refint\Email.dll
+C:\newGA\Email\obj\Debug\net6.0\Email.pdb
+C:\newGA\Email\obj\Debug\net6.0\ref\Email.dll

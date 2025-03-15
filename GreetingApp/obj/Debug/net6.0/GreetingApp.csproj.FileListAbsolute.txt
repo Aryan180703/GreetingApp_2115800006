@@ -182,3 +182,6 @@ C:\newGA\GreetingApp\obj\Debug\net6.0\refint\GreetingApp.dll
 C:\newGA\GreetingApp\obj\Debug\net6.0\GreetingApp.pdb
 C:\newGA\GreetingApp\obj\Debug\net6.0\GreetingApp.genruntimeconfig.cache
 C:\newGA\GreetingApp\obj\Debug\net6.0\ref\GreetingApp.dll
+C:\newGA\GreetingApp\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\newGA\GreetingApp\bin\Debug\net6.0\Email.dll
+C:\newGA\GreetingApp\bin\Debug\net6.0\Email.pdb

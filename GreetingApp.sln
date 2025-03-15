@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingApp", "GreetingApp\GreetingApp.csproj", "{EF4785DF-260B-472B-956D-8264556BC4E1}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryLayer", "RepositoryLayer\RepositoryLayer.csproj", "{BA2540A9-C9BE-4EAC-92B2-5EC932E3CBBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelLayer", "ModelLayer\ModelLayer.csproj", "{54944A5F-2733-4F91-BE8D-5FE5DBE70481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email", "Email\Email.csproj", "{8A7CD02C-AA09-4F4A-A351-2C5F870C2D18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +35,15 @@ Global
 		{54944A5F-2733-4F91-BE8D-5FE5DBE70481}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54944A5F-2733-4F91-BE8D-5FE5DBE70481}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54944A5F-2733-4F91-BE8D-5FE5DBE70481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7CD02C-AA09-4F4A-A351-2C5F870C2D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7CD02C-AA09-4F4A-A351-2C5F870C2D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7CD02C-AA09-4F4A-A351-2C5F870C2D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7CD02C-AA09-4F4A-A351-2C5F870C2D18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {548218D7-7AF3-4D33-8D4F-E0986E15DCB9}
 	EndGlobalSection
 EndGlobal
